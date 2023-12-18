@@ -1,7 +1,0 @@
-/*dma_demo_wrapper*/
-the_ROM_image:
-{
-  [bootloader]<dma_demo_wrapper/boot/fsbl.elf>
-   <bitstream> 
-  <elf,ps7_cortexa9_0>
-}

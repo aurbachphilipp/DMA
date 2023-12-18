@@ -22,3 +22,14 @@ platform generate -quick
 platform generate
 platform clean
 platform generate
+platform active {dma_demo_wrapper}
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
