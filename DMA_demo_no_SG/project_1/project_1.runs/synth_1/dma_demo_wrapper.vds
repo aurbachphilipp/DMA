@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Dec 18 16:23:21 2023
-# Process ID: 9778
+# Start of session at: Mon Dec 18 16:44:06 2023
+# Process ID: 16732
 # Current directory: /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1
 # Command line: vivado -log dma_demo_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dma_demo_wrapper.tcl
 # Log file: /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/dma_demo_wrapper.vds
@@ -20,44 +20,44 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 9941
+INFO: [Synth 8-7075] Helper process launched with PID 16775
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2331.234 ; gain = 0.000 ; free physical = 10645 ; free virtual = 47282
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2333.234 ; gain = 0.000 ; free physical = 5772 ; free virtual = 43140
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'dma_demo_wrapper' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/hdl/dma_demo_wrapper.vhd:40]
 INFO: [Synth 8-3491] module 'dma_demo' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:2043' bound to instance 'dma_demo_i' of component 'dma_demo' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/hdl/dma_demo_wrapper.vhd:67]
 INFO: [Synth 8-638] synthesizing module 'dma_demo' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:2073]
 WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:2189]
-INFO: [Synth 8-3491] module 'dma_demo_axi_dma_0_0' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-9778-ei-lan-398/realtime/dma_demo_axi_dma_0_0_stub.vhdl:5' bound to instance 'axi_dma_0' of component 'dma_demo_axi_dma_0_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:2489]
-INFO: [Synth 8-638] synthesizing module 'dma_demo_axi_dma_0_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-9778-ei-lan-398/realtime/dma_demo_axi_dma_0_0_stub.vhdl:75]
+INFO: [Synth 8-3491] module 'dma_demo_axi_dma_0_0' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-16732-ei-lan-398/realtime/dma_demo_axi_dma_0_0_stub.vhdl:5' bound to instance 'axi_dma_0' of component 'dma_demo_axi_dma_0_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:2489]
+INFO: [Synth 8-638] synthesizing module 'dma_demo_axi_dma_0_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-16732-ei-lan-398/realtime/dma_demo_axi_dma_0_0_stub.vhdl:75]
 INFO: [Synth 8-638] synthesizing module 'dma_demo_axi_mem_intercon_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:1210]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1LGDHM7' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:100]
-INFO: [Synth 8-3491] module 'dma_demo_auto_pc_1' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-9778-ei-lan-398/realtime/dma_demo_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'dma_demo_auto_pc_1' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:343]
-INFO: [Synth 8-638] synthesizing module 'dma_demo_auto_pc_1' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-9778-ei-lan-398/realtime/dma_demo_auto_pc_1_stub.vhdl:90]
+INFO: [Synth 8-3491] module 'dma_demo_auto_pc_1' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-16732-ei-lan-398/realtime/dma_demo_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'dma_demo_auto_pc_1' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:343]
+INFO: [Synth 8-638] synthesizing module 'dma_demo_auto_pc_1' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-16732-ei-lan-398/realtime/dma_demo_auto_pc_1_stub.vhdl:90]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1LGDHM7' (1#1) [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:100]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_F150DP' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:467]
-INFO: [Synth 8-3491] module 'dma_demo_auto_us_0' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-9778-ei-lan-398/realtime/dma_demo_auto_us_0_stub.vhdl:5' bound to instance 'auto_us' of component 'dma_demo_auto_us_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:568]
-INFO: [Synth 8-638] synthesizing module 'dma_demo_auto_us_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-9778-ei-lan-398/realtime/dma_demo_auto_us_0_stub.vhdl:45]
+INFO: [Synth 8-3491] module 'dma_demo_auto_us_0' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-16732-ei-lan-398/realtime/dma_demo_auto_us_0_stub.vhdl:5' bound to instance 'auto_us' of component 'dma_demo_auto_us_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:568]
+INFO: [Synth 8-638] synthesizing module 'dma_demo_auto_us_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-16732-ei-lan-398/realtime/dma_demo_auto_us_0_stub.vhdl:45]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_F150DP' (2#1) [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:467]
 INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_1OCHJGS' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:963]
-INFO: [Synth 8-3491] module 'dma_demo_auto_us_1' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-9778-ei-lan-398/realtime/dma_demo_auto_us_1_stub.vhdl:5' bound to instance 'auto_us' of component 'dma_demo_auto_us_1' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:1082]
-INFO: [Synth 8-638] synthesizing module 'dma_demo_auto_us_1' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-9778-ei-lan-398/realtime/dma_demo_auto_us_1_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'dma_demo_auto_us_1' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-16732-ei-lan-398/realtime/dma_demo_auto_us_1_stub.vhdl:5' bound to instance 'auto_us' of component 'dma_demo_auto_us_1' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:1082]
+INFO: [Synth 8-638] synthesizing module 'dma_demo_auto_us_1' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-16732-ei-lan-398/realtime/dma_demo_auto_us_1_stub.vhdl:51]
 INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_1OCHJGS' (3#1) [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:963]
-INFO: [Synth 8-3491] module 'dma_demo_xbar_0' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-9778-ei-lan-398/realtime/dma_demo_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'dma_demo_xbar_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:1675]
-INFO: [Synth 8-638] synthesizing module 'dma_demo_xbar_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-9778-ei-lan-398/realtime/dma_demo_xbar_0_stub.vhdl:89]
+INFO: [Synth 8-3491] module 'dma_demo_xbar_0' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-16732-ei-lan-398/realtime/dma_demo_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'dma_demo_xbar_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:1675]
+INFO: [Synth 8-638] synthesizing module 'dma_demo_xbar_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-16732-ei-lan-398/realtime/dma_demo_xbar_0_stub.vhdl:89]
 INFO: [Synth 8-256] done synthesizing module 'dma_demo_axi_mem_intercon_0' (4#1) [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:1210]
-INFO: [Synth 8-3491] module 'dma_demo_axis_data_fifo_0_0' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-9778-ei-lan-398/realtime/dma_demo_axis_data_fifo_0_0_stub.vhdl:5' bound to instance 'axis_data_fifo_0' of component 'dma_demo_axis_data_fifo_0_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:2633]
-INFO: [Synth 8-638] synthesizing module 'dma_demo_axis_data_fifo_0_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-9778-ei-lan-398/realtime/dma_demo_axis_data_fifo_0_0_stub.vhdl:23]
-INFO: [Synth 8-3491] module 'dma_demo_processing_system7_0_0' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-9778-ei-lan-398/realtime/dma_demo_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'dma_demo_processing_system7_0_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:2648]
-INFO: [Synth 8-638] synthesizing module 'dma_demo_processing_system7_0_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-9778-ei-lan-398/realtime/dma_demo_processing_system7_0_0_stub.vhdl:122]
+INFO: [Synth 8-3491] module 'dma_demo_axis_data_fifo_0_0' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-16732-ei-lan-398/realtime/dma_demo_axis_data_fifo_0_0_stub.vhdl:5' bound to instance 'axis_data_fifo_0' of component 'dma_demo_axis_data_fifo_0_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:2633]
+INFO: [Synth 8-638] synthesizing module 'dma_demo_axis_data_fifo_0_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-16732-ei-lan-398/realtime/dma_demo_axis_data_fifo_0_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'dma_demo_processing_system7_0_0' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-16732-ei-lan-398/realtime/dma_demo_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'dma_demo_processing_system7_0_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:2648]
+INFO: [Synth 8-638] synthesizing module 'dma_demo_processing_system7_0_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-16732-ei-lan-398/realtime/dma_demo_processing_system7_0_0_stub.vhdl:122]
 INFO: [Synth 8-638] synthesizing module 'dma_demo_ps7_0_axi_periph_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:1859]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_IO3NEU' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:673]
-INFO: [Synth 8-3491] module 'dma_demo_auto_pc_0' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-9778-ei-lan-398/realtime/dma_demo_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'dma_demo_auto_pc_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:853]
-INFO: [Synth 8-638] synthesizing module 'dma_demo_auto_pc_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-9778-ei-lan-398/realtime/dma_demo_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-3491] module 'dma_demo_auto_pc_0' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-16732-ei-lan-398/realtime/dma_demo_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'dma_demo_auto_pc_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:853]
+INFO: [Synth 8-638] synthesizing module 'dma_demo_auto_pc_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-16732-ei-lan-398/realtime/dma_demo_auto_pc_0_stub.vhdl:70]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_IO3NEU' (5#1) [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:673]
 INFO: [Synth 8-256] done synthesizing module 'dma_demo_ps7_0_axi_periph_0' (6#1) [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:1859]
-INFO: [Synth 8-3491] module 'dma_demo_rst_ps7_0_50M_0' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-9778-ei-lan-398/realtime/dma_demo_rst_ps7_0_50M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_50M' of component 'dma_demo_rst_ps7_0_50M_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:2828]
-INFO: [Synth 8-638] synthesizing module 'dma_demo_rst_ps7_0_50M_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-9778-ei-lan-398/realtime/dma_demo_rst_ps7_0_50M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'dma_demo_rst_ps7_0_50M_0' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-16732-ei-lan-398/realtime/dma_demo_rst_ps7_0_50M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_50M' of component 'dma_demo_rst_ps7_0_50M_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:2828]
+INFO: [Synth 8-638] synthesizing module 'dma_demo_rst_ps7_0_50M_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/.Xil/Vivado-16732-ei-lan-398/realtime/dma_demo_rst_ps7_0_50M_0_stub.vhdl:21]
 INFO: [Synth 8-3491] module 'dma_demo_xlconcat_0_0' declared at '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_xlconcat_0_0/synth/dma_demo_xlconcat_0_0.v:60' bound to instance 'xlconcat_0' of component 'dma_demo_xlconcat_0_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:2841]
 INFO: [Synth 8-6157] synthesizing module 'dma_demo_xlconcat_0_0' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_xlconcat_0_0/synth/dma_demo_xlconcat_0_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
@@ -196,18 +196,18 @@ INFO: [Synth 8-6155] done synthesizing module 'dma_demo_xlconcat_0_0' (8#1) [/ho
 INFO: [Synth 8-256] done synthesizing module 'dma_demo' (9#1) [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/synth/dma_demo.vhd:2073]
 INFO: [Synth 8-256] done synthesizing module 'dma_demo_wrapper' (10#1) [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/hdl/dma_demo_wrapper.vhd:40]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2331.234 ; gain = 0.000 ; free physical = 10527 ; free virtual = 47165
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2333.234 ; gain = 0.000 ; free physical = 6496 ; free virtual = 43865
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2331.234 ; gain = 0.000 ; free physical = 11199 ; free virtual = 47837
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2333.234 ; gain = 0.000 ; free physical = 6495 ; free virtual = 43864
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2331.234 ; gain = 0.000 ; free physical = 11199 ; free virtual = 47837
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2333.234 ; gain = 0.000 ; free physical = 6495 ; free virtual = 43864
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2331.234 ; gain = 0.000 ; free physical = 11211 ; free virtual = 47849
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2333.234 ; gain = 0.000 ; free physical = 6488 ; free virtual = 43857
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -234,20 +234,20 @@ Parsing XDC File [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/proj
 Finished Parsing XDC File [/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2395.148 ; gain = 0.000 ; free physical = 11190 ; free virtual = 47828
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2397.148 ; gain = 0.000 ; free physical = 6403 ; free virtual = 43771
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2395.148 ; gain = 0.000 ; free physical = 11190 ; free virtual = 47828
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2397.148 ; gain = 0.000 ; free physical = 6403 ; free virtual = 43771
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2395.148 ; gain = 63.914 ; free physical = 11282 ; free virtual = 47920
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2397.148 ; gain = 63.914 ; free physical = 6471 ; free virtual = 43840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2395.148 ; gain = 63.914 ; free physical = 11282 ; free virtual = 47920
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2397.148 ; gain = 63.914 ; free physical = 6471 ; free virtual = 43840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -526,10 +526,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for dma_demo_i/axi_mem_intercon. (con
 Applied set_property KEEP_HIERARCHY = SOFT for dma_demo_i/axis_data_fifo_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for dma_demo_i/xlconcat_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2395.148 ; gain = 63.914 ; free physical = 11275 ; free virtual = 47914
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2397.148 ; gain = 63.914 ; free physical = 6472 ; free virtual = 43841
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2395.148 ; gain = 63.914 ; free physical = 11267 ; free virtual = 47906
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2397.148 ; gain = 63.914 ; free physical = 6472 ; free virtual = 43842
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -551,25 +551,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2395.148 ; gain = 63.914 ; free physical = 11288 ; free virtual = 47931
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2397.148 ; gain = 63.914 ; free physical = 6466 ; free virtual = 43840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2395.148 ; gain = 63.914 ; free physical = 11184 ; free virtual = 47826
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2397.148 ; gain = 63.914 ; free physical = 6344 ; free virtual = 43717
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2395.148 ; gain = 63.914 ; free physical = 11184 ; free virtual = 47826
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2397.148 ; gain = 63.914 ; free physical = 6343 ; free virtual = 43717
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2395.148 ; gain = 63.914 ; free physical = 11183 ; free virtual = 47825
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2397.148 ; gain = 63.914 ; free physical = 6343 ; free virtual = 43716
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -587,37 +587,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2395.148 ; gain = 63.914 ; free physical = 11149 ; free virtual = 47792
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2397.148 ; gain = 63.914 ; free physical = 6338 ; free virtual = 43711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2395.148 ; gain = 63.914 ; free physical = 11149 ; free virtual = 47792
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2397.148 ; gain = 63.914 ; free physical = 6338 ; free virtual = 43711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2395.148 ; gain = 63.914 ; free physical = 11149 ; free virtual = 47792
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2397.148 ; gain = 63.914 ; free physical = 6338 ; free virtual = 43711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2395.148 ; gain = 63.914 ; free physical = 11149 ; free virtual = 47792
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2397.148 ; gain = 63.914 ; free physical = 6338 ; free virtual = 43711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2395.148 ; gain = 63.914 ; free physical = 11149 ; free virtual = 47792
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2397.148 ; gain = 63.914 ; free physical = 6343 ; free virtual = 43716
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2395.148 ; gain = 63.914 ; free physical = 11149 ; free virtual = 47792
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2397.148 ; gain = 63.914 ; free physical = 6346 ; free virtual = 43719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -653,23 +653,23 @@ Report Cell Usage:
 |9     |dma_demo_xbar_0_bbox                 |     1|
 +------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2395.148 ; gain = 63.914 ; free physical = 11149 ; free virtual = 47792
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2397.148 ; gain = 63.914 ; free physical = 6346 ; free virtual = 43719
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2395.148 ; gain = 0.000 ; free physical = 11207 ; free virtual = 47849
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2395.148 ; gain = 63.914 ; free physical = 11207 ; free virtual = 47849
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2397.148 ; gain = 0.000 ; free physical = 6403 ; free virtual = 43776
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2397.148 ; gain = 63.914 ; free physical = 6403 ; free virtual = 43776
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2395.148 ; gain = 0.000 ; free physical = 11298 ; free virtual = 47941
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2397.148 ; gain = 0.000 ; free physical = 6496 ; free virtual = 43870
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2395.148 ; gain = 0.000 ; free physical = 11257 ; free virtual = 47900
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2397.148 ; gain = 0.000 ; free physical = 6435 ; free virtual = 43809
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 55 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 2395.148 ; gain = 64.031 ; free physical = 11340 ; free virtual = 47983
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 2397.148 ; gain = 64.031 ; free physical = 6573 ; free virtual = 43947
 INFO: [Common 17-1381] The checkpoint '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/dma_demo_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file dma_demo_wrapper_utilization_synth.rpt -pb dma_demo_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Dec 18 16:23:46 2023...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 18 16:44:29 2023...

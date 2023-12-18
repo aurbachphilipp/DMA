@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Mon Dec 18 16:24:43 2023
+| Date         : Mon Dec 18 16:45:24 2023
 | Host         : ei-lan-398 running 64-bit Debian GNU/Linux 10 (buster)
 | Command      : report_methodology -file dma_demo_wrapper_methodology_drc_routed.rpt -pb dma_demo_wrapper_methodology_drc_routed.pb -rpx dma_demo_wrapper_methodology_drc_routed.rpx
 | Design       : dma_demo_wrapper

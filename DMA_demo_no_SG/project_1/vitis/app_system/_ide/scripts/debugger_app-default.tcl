@@ -25,5 +25,4 @@ ps7_post_config
 targets -set -nocase -filter {name =~ "*A9*#0"}
 dow /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/app/Debug/app.elf
 configparams force-mem-access 0
-targets -set -nocase -filter {name =~ "*A9*#0"}
-con
+bpadd -addr &main

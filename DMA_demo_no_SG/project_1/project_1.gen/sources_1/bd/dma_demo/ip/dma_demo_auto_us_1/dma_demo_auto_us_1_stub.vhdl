@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
--- Date        : Mon Dec 18 16:23:10 2023
+-- Date        : Mon Dec 18 16:23:09 2023
 -- Host        : ei-lan-398 running 64-bit Debian GNU/Linux 10 (buster)
--- Command     : write_vhdl -force -mode synth_stub
---               /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_auto_us_1/dma_demo_auto_us_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top dma_demo_auto_us_1 -prefix
+--               dma_demo_auto_us_1_ dma_demo_auto_us_1_stub.vhdl
 -- Design      : dma_demo_auto_us_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1
