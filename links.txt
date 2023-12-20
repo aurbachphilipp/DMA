@@ -1,0 +1,25 @@
+DMA (FPGA Developer)
+https://www.fpgadeveloper.com/2014/08/using-the-axi-dma-in-vivado.html/
+
+
+
+CDMA
+https://www.mehmetburakaykenar.com/xilinx-zynq-axi-central-dma-cdma-on-chip-memory-ocm-ddr3-ram-and-pl-block-ram-data-transfer-performances/359/
+
+https://github.com/mbaykenar/zynq-soc-hw-sw-design/blob/main/ders15/znyq_axi_cdma_tutorial.c#L88
+
+
+
+VDMA
+base for VDMA: https://lauri.xn--vsandi-pxa.com/hdl/zynq/xilinx-dma.html
+
+good example: https://lauri.xn--vsandi-pxa.com/hdl/zynq/xilinx-video-capture.html
+
+https://lauri.xn--vsandi-pxa.com/hdl/zynq/xilinx-vdma.html
+
+https://support.xilinx.com/s/article/947566?language=en_US
+
+
+
+Datamover
+tbd
