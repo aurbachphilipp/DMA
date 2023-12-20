@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Dec 11 15:38:49 2023
+# Process ID: 4768
+# Current directory: /home/rom41797/Documents/Project/DMA_demo/project_1/project_1.runs/dma_demo_axis_data_fifo_0_0_synth_1
+# Command line: vivado -log dma_demo_axis_data_fifo_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dma_demo_axis_data_fifo_0_0.tcl
+# Log file: /home/rom41797/Documents/Project/DMA_demo/project_1/project_1.runs/dma_demo_axis_data_fifo_0_0_synth_1/dma_demo_axis_data_fifo_0_0.vds
+# Journal file: /home/rom41797/Documents/Project/DMA_demo/project_1/project_1.runs/dma_demo_axis_data_fifo_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source dma_demo_axis_data_fifo_0_0.tcl -notrace
