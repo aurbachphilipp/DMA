@@ -1,0 +1,220 @@
+16:46:31 INFO  : Launching XSCT server: xsct -n  -interactive /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/temp_xsdb_launch_script.tcl
+16:46:31 INFO  : Registering command handlers for Vitis TCF services
+16:46:33 INFO  : Platform repository initialization has completed.
+16:46:33 INFO  : XSCT server has started successfully.
+16:46:33 INFO  : Successfully done setting XSCT server connection channel  
+16:46:33 INFO  : plnx-install-location is set to ''
+16:46:33 INFO  : Successfully done setting workspace for the tool. 
+16:46:33 INFO  : Successfully done query RDI_DATADIR 
+16:47:13 INFO  : Result from executing command 'getProjects': dma_demo_wrapper
+16:47:13 INFO  : Result from executing command 'getPlatforms': 
+16:47:13 WARN  : An unexpected exception occurred in the module 'platform project logging'
+16:47:13 INFO  : Platform 'dma_demo_wrapper' is added to custom repositories.
+16:47:18 INFO  : Platform 'dma_demo_wrapper' is added to custom repositories.
+16:50:22 INFO  : Result from executing command 'getProjects': dma_demo_wrapper
+16:50:22 INFO  : Result from executing command 'getPlatforms': dma_demo_wrapper|/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/dma_demo_wrapper/export/dma_demo_wrapper/dma_demo_wrapper.xpfm
+16:50:25 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+16:50:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:50:47 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370A92FA7A' is selected.
+16:50:47 INFO  : 'jtag frequency' command is executed.
+16:50:47 INFO  : Context for 'APU' is selected.
+16:50:47 INFO  : System reset is completed.
+16:50:50 INFO  : 'after 3000' command is executed.
+16:50:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370A92FA7A" && level==0 && jtag_device_ctx=="jsn-Cora Z7 - 7007S-210370A92FA7A-13722093-0"}' command is executed.
+16:50:51 INFO  : Device configured successfully with "/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/app/_ide/bitstream/dma_demo_wrapper.bit"
+16:50:51 INFO  : Context for 'APU' is selected.
+16:50:51 INFO  : Hardware design and registers information is loaded from '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/dma_demo_wrapper/export/dma_demo_wrapper/hw/dma_demo_wrapper.xsa'.
+16:50:51 INFO  : 'configparams force-mem-access 1' command is executed.
+16:50:51 INFO  : Context for 'APU' is selected.
+16:50:51 INFO  : Sourcing of '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/app/_ide/psinit/ps7_init.tcl' is done.
+16:50:52 INFO  : 'ps7_init' command is executed.
+16:50:52 INFO  : 'ps7_post_config' command is executed.
+16:50:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:50:52 INFO  : The application '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/app/Debug/app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:50:52 INFO  : 'configparams force-mem-access 0' command is executed.
+16:50:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370A92FA7A" && level==0 && jtag_device_ctx=="jsn-Cora Z7 - 7007S-210370A92FA7A-13722093-0"}
+fpga -file /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/app/_ide/bitstream/dma_demo_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/dma_demo_wrapper/export/dma_demo_wrapper/hw/dma_demo_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:50:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:50:52 INFO  : 'con' command is executed.
+16:50:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:50:52 INFO  : Launch script is exported to file '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/app_system/_ide/scripts/debugger_app-default.tcl'
+16:53:35 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+16:53:45 INFO  : Disconnected from the channel tcfchan#2.
+16:53:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:53:47 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370A92FA7A' is selected.
+16:53:47 INFO  : 'jtag frequency' command is executed.
+16:53:47 INFO  : Context for 'APU' is selected.
+16:53:47 INFO  : System reset is completed.
+16:53:50 INFO  : 'after 3000' command is executed.
+16:53:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370A92FA7A" && level==0 && jtag_device_ctx=="jsn-Cora Z7 - 7007S-210370A92FA7A-13722093-0"}' command is executed.
+16:53:51 INFO  : Device configured successfully with "/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/app/_ide/bitstream/dma_demo_wrapper.bit"
+16:53:51 INFO  : Context for 'APU' is selected.
+16:53:51 INFO  : Hardware design and registers information is loaded from '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/dma_demo_wrapper/export/dma_demo_wrapper/hw/dma_demo_wrapper.xsa'.
+16:53:51 INFO  : 'configparams force-mem-access 1' command is executed.
+16:53:51 INFO  : Context for 'APU' is selected.
+16:53:51 INFO  : Sourcing of '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/app/_ide/psinit/ps7_init.tcl' is done.
+16:53:51 INFO  : 'ps7_init' command is executed.
+16:53:51 INFO  : 'ps7_post_config' command is executed.
+16:53:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:53:51 INFO  : The application '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/app/Debug/app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:53:51 INFO  : 'configparams force-mem-access 0' command is executed.
+16:53:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370A92FA7A" && level==0 && jtag_device_ctx=="jsn-Cora Z7 - 7007S-210370A92FA7A-13722093-0"}
+fpga -file /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/app/_ide/bitstream/dma_demo_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/dma_demo_wrapper/export/dma_demo_wrapper/hw/dma_demo_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:53:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:53:52 INFO  : 'con' command is executed.
+16:53:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:53:52 INFO  : Launch script is exported to file '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/app_system/_ide/scripts/debugger_app-default.tcl'
+16:54:03 INFO  : Disconnected from the channel tcfchan#3.
+10:12:55 INFO  : Launching XSCT server: xsct -n  -interactive /home/rom41797/Documents/Project/DMA_simple_polling/vitis/temp_xsdb_launch_script.tcl
+10:12:57 INFO  : XSCT server has started successfully.
+10:12:57 INFO  : plnx-install-location is set to ''
+10:12:57 INFO  : Successfully done setting XSCT server connection channel  
+10:12:57 INFO  : Successfully done setting workspace for the tool. 
+10:12:58 INFO  : Platform repository initialization has completed.
+10:12:58 INFO  : Successfully done query RDI_DATADIR 
+10:12:58 INFO  : Registering command handlers for Vitis TCF services
+10:13:34 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+10:13:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:13:49 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370A92FA7A' is selected.
+10:13:49 INFO  : 'jtag frequency' command is executed.
+10:13:49 INFO  : Context for 'APU' is selected.
+10:13:49 INFO  : System reset is completed.
+10:13:52 INFO  : 'after 3000' command is executed.
+10:13:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370A92FA7A" && level==0 && jtag_device_ctx=="jsn-Cora Z7 - 7007S-210370A92FA7A-13722093-0"}' command is executed.
+10:13:53 INFO  : Device configured successfully with "/home/rom41797/Documents/Project/DMA_simple_polling/vitis/app/_ide/bitstream/dma_demo_wrapper.bit"
+10:13:53 INFO  : Context for 'APU' is selected.
+10:13:53 INFO  : Hardware design and registers information is loaded from '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/dma_demo_wrapper/export/dma_demo_wrapper/hw/dma_demo_wrapper.xsa'.
+10:13:53 INFO  : 'configparams force-mem-access 1' command is executed.
+10:13:53 INFO  : Context for 'APU' is selected.
+10:13:53 INFO  : Sourcing of '/home/rom41797/Documents/Project/DMA_simple_polling/vitis/app/_ide/psinit/ps7_init.tcl' is done.
+10:13:54 INFO  : 'ps7_init' command is executed.
+10:13:54 INFO  : 'ps7_post_config' command is executed.
+10:13:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:13:54 INFO  : The application '/home/rom41797/Documents/Project/DMA_simple_polling/vitis/app/Debug/app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:13:54 INFO  : 'configparams force-mem-access 0' command is executed.
+10:13:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370A92FA7A" && level==0 && jtag_device_ctx=="jsn-Cora Z7 - 7007S-210370A92FA7A-13722093-0"}
+fpga -file /home/rom41797/Documents/Project/DMA_simple_polling/vitis/app/_ide/bitstream/dma_demo_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/dma_demo_wrapper/export/dma_demo_wrapper/hw/dma_demo_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/rom41797/Documents/Project/DMA_simple_polling/vitis/app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/rom41797/Documents/Project/DMA_simple_polling/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:13:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:13:54 INFO  : 'con' command is executed.
+10:13:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:13:54 INFO  : Launch script is exported to file '/home/rom41797/Documents/Project/DMA_simple_polling/vitis/app_system/_ide/scripts/debugger_app-default.tcl'
+10:14:09 INFO  : Disconnected from the channel tcfchan#1.
+10:24:56 INFO  : Launching XSCT server: xsct -n  -interactive /home/rom41797/Documents/Project/DAM_simple_interrupt/vitis/temp_xsdb_launch_script.tcl
+10:24:58 INFO  : XSCT server has started successfully.
+10:24:58 INFO  : plnx-install-location is set to ''
+10:24:58 INFO  : Successfully done setting XSCT server connection channel  
+10:24:58 INFO  : Successfully done setting workspace for the tool. 
+10:24:59 INFO  : Platform repository initialization has completed.
+10:24:59 INFO  : Successfully done query RDI_DATADIR 
+10:24:59 INFO  : Registering command handlers for Vitis TCF services
+10:26:06 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+10:27:57 INFO  : Checking for BSP changes to sync application flags for project 'app'...
+10:28:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:28:08 INFO  : Jtag cable 'Digilent Cora Z7 - 7007S 210370A92FA7A' is selected.
+10:28:08 INFO  : 'jtag frequency' command is executed.
+10:28:08 INFO  : Context for 'APU' is selected.
+10:28:08 INFO  : System reset is completed.
+10:28:11 INFO  : 'after 3000' command is executed.
+10:28:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370A92FA7A" && level==0 && jtag_device_ctx=="jsn-Cora Z7 - 7007S-210370A92FA7A-13722093-0"}' command is executed.
+10:28:13 INFO  : Device configured successfully with "/home/rom41797/Documents/Project/DAM_simple_interrupt/vitis/app/_ide/bitstream/dma_demo_wrapper.bit"
+10:28:13 INFO  : Context for 'APU' is selected.
+10:28:13 INFO  : Hardware design and registers information is loaded from '/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/dma_demo_wrapper/export/dma_demo_wrapper/hw/dma_demo_wrapper.xsa'.
+10:28:13 INFO  : 'configparams force-mem-access 1' command is executed.
+10:28:13 INFO  : Context for 'APU' is selected.
+10:28:13 INFO  : Sourcing of '/home/rom41797/Documents/Project/DAM_simple_interrupt/vitis/app/_ide/psinit/ps7_init.tcl' is done.
+10:28:13 INFO  : 'ps7_init' command is executed.
+10:28:13 INFO  : 'ps7_post_config' command is executed.
+10:28:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:28:13 INFO  : The application '/home/rom41797/Documents/Project/DAM_simple_interrupt/vitis/app/Debug/app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:28:13 INFO  : 'configparams force-mem-access 0' command is executed.
+10:28:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Cora Z7 - 7007S 210370A92FA7A" && level==0 && jtag_device_ctx=="jsn-Cora Z7 - 7007S-210370A92FA7A-13722093-0"}
+fpga -file /home/rom41797/Documents/Project/DAM_simple_interrupt/vitis/app/_ide/bitstream/dma_demo_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/dma_demo_wrapper/export/dma_demo_wrapper/hw/dma_demo_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/rom41797/Documents/Project/DAM_simple_interrupt/vitis/app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/rom41797/Documents/Project/DAM_simple_interrupt/vitis/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:28:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:28:13 INFO  : 'con' command is executed.
+10:28:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:28:13 INFO  : Launch script is exported to file '/home/rom41797/Documents/Project/DAM_simple_interrupt/vitis/app_system/_ide/scripts/debugger_app-default.tcl'
+10:28:29 INFO  : Disconnected from the channel tcfchan#1.
