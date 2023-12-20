@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="sdx.custom.platform.repository.locations" value="/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/vitis/dma_demo_wrapper/export/dma_demo_wrapper;/home/rom41797/Documents/Project/CDMA_simple_polling/vitis/dma_demo_wrapper/export/dma_demo_wrapper;/home/rom41797/Documents/Project/CDMA_simple_polling_DDR/vitis/dma_demo_wrapper/export/dma_demo_wrapper"/>
+</section>

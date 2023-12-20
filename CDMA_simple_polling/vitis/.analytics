@@ -22,3 +22,6 @@ timestamp=[2023-12-20 11:54:29], mode=BUILD, duration=0:00:00.225, duration_ms=2
 timestamp=[2023-12-20 12:04:56], mode=BUILD, duration=0:00:00.169, duration_ms=169, data={name=app, configuration=Debug, clean_build=false}
 timestamp=[2023-12-20 12:05:03], mode=BUILD, duration=0:00:00.068, duration_ms=68, data={name=app, configuration=Debug, clean_build=false}
 timestamp=[2023-12-20 12:09:56], mode=BUILD, duration=0:00:00.169, duration_ms=169, data={name=app, configuration=Debug, clean_build=false}
+timestamp=[2023-12-20 13:59:17], mode=WORKBENCH_START, duration=0:00:05.693, duration_ms=5693, data={}
+timestamp=[2023-12-20 13:59:17], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.017, duration_ms=17, data={}
+timestamp=[2023-12-20 13:59:18], mode=WORKBENCH_UI_INIT, duration=0:00:00.662, duration_ms=662, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,app,app_system,dma_demo_wrapper}
