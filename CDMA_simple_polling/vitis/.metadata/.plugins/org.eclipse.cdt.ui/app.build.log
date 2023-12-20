@@ -1,0 +1,25 @@
+12:09:56 **** Incremental Build of configuration Debug for project app ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/cdma_simple_polling.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cdma_simple_polling.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/rom41797/Documents/Project/CDMA_simple_polling/vitis/dma_demo_wrapper/export/dma_demo_wrapper/sw/dma_demo_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/cdma_simple_polling.d" -MT"src/cdma_simple_polling.o" -o "src/cdma_simple_polling.o" "../src/cdma_simple_polling.c"
+Finished building: ../src/cdma_simple_polling.c
+ 
+Building target: app.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/rom41797/Documents/Project/CDMA_simple_polling/vitis/dma_demo_wrapper/export/dma_demo_wrapper/sw/dma_demo_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "app.elf"  ./src/cdma_simple_polling.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size app.elf  |tee "app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31496	   1176	  23024	  55696	   d990	app.elf
+Finished building: app.elf.size
+ 
+
+12:09:56 Build Finished (took 165ms)
+

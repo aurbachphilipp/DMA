@@ -1,0 +1,751 @@
+
+*** Running vivado
+    with args -log dma_demo_axi_cdma_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dma_demo_axi_cdma_0_0.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source dma_demo_axi_cdma_0_0.tcl -notrace
+Command: synth_design -top dma_demo_axi_cdma_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3580
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 2330.238 ; gain = 0.000 ; free physical = 9138 ; free virtual = 49928
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dma_demo_axi_cdma_0_0' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_axi_cdma_0_0/synth/dma_demo_axi_cdma_0_0.vhd:114]
+	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_LITE_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_MAX_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_INCLUDE_DRE bound to: 0 - type: integer 
+	Parameter C_USE_DATAMOVER_LITE bound to: 0 - type: integer 
+	Parameter C_READ_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_WRITE_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_INCLUDE_SF bound to: 0 - type: integer 
+	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
+	Parameter C_M_AXI_SG_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_SG_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_DLYTMR_RESOLUTION bound to: 256 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-3491] module 'axi_cdma' declared at '/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:15027' bound to instance 'U0' of component 'axi_cdma' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_axi_cdma_0_0/synth/dma_demo_axi_cdma_0_0.vhd:285]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:15327]
+	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_LITE_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_MAX_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_INCLUDE_DRE bound to: 0 - type: integer 
+	Parameter C_USE_DATAMOVER_LITE bound to: 0 - type: integer 
+	Parameter C_READ_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_WRITE_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_INCLUDE_SF bound to: 0 - type: integer 
+	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
+	Parameter C_M_AXI_SG_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_SG_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_DLYTMR_RESOLUTION bound to: 256 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_INSTANCE bound to: axi_cdma - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_simple_wrap' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:8729]
+	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_LITE_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_MAX_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_INCLUDE_DRE bound to: 0 - type: integer 
+	Parameter C_USE_DATAMOVER_LITE bound to: 0 - type: integer 
+	Parameter C_READ_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_WRITE_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_INCLUDE_SF bound to: 0 - type: integer 
+	Parameter C_SF_FIFO_DEPTH bound to: 128 - type: integer 
+	Parameter C_SOFT_RST_TIME_CLKS bound to: 8 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_reset' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:984]
+	Parameter C_AXI_LITE_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_SOFT_RST_TIME_CLKS bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_pulse_gen' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+	Parameter C_INCLUDE_SYNCHRO bound to: 0 - type: integer 
+	Parameter C_POS_EDGE_TRIG bound to: 1 - type: integer 
+	Parameter C_PULSE_WIDTH_CLKS bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_pulse_gen' (1#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_pulse_gen__parameterized0' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+	Parameter C_INCLUDE_SYNCHRO bound to: 0 - type: integer 
+	Parameter C_POS_EDGE_TRIG bound to: 0 - type: integer 
+	Parameter C_PULSE_WIDTH_CLKS bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_pulse_gen__parameterized0' (1#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_pulse_gen__parameterized1' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+	Parameter C_INCLUDE_SYNCHRO bound to: 0 - type: integer 
+	Parameter C_POS_EDGE_TRIG bound to: 1 - type: integer 
+	Parameter C_PULSE_WIDTH_CLKS bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_pulse_gen__parameterized1' (1#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_reset' (2#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:984]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_reg_module' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:5316]
+	Parameter C_CDMA_BUILD_MODE bound to: 0 - type: integer 
+	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_LITE_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_M_AXI_SG_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_lite_if' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:2173]
+	Parameter C_NUM_CE bound to: 16 - type: integer 
+	Parameter C_AXI_LITE_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_lite_if' (3#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:2173]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_register' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:3810]
+	Parameter C_CDMA_BUILD_MODE bound to: 0 - type: integer 
+	Parameter C_NUM_REGISTERS bound to: 16 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_SG_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_register' (4#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:3810]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_reg_module' (5#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:5316]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_simple_cntlr' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:7706]
+	Parameter C_DM_CMD_WIDTH bound to: 75 - type: integer 
+	Parameter C_DM_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_DM_MM2S_STATUS_WIDTH bound to: 8 - type: integer 
+	Parameter C_DM_S2MM_STATUS_WIDTH bound to: 8 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_BTT_WIDTH bound to: 26 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-226] default block is never used [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:8247]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_simple_cntlr' (6#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:7706]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:55436]
+	Parameter C_INCLUDE_MM2S bound to: 1 - type: integer 
+	Parameter C_M_AXI_MM2S_ARID bound to: 0 - type: integer 
+	Parameter C_M_AXI_MM2S_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_MM2S_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_MM2S_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_MM2S_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_INCLUDE_MM2S_STSFIFO bound to: 1 - type: integer 
+	Parameter C_MM2S_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
+	Parameter C_MM2S_STSCMD_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_INCLUDE_MM2S_DRE bound to: 0 - type: integer 
+	Parameter C_MM2S_BURST_SIZE bound to: 16 - type: integer 
+	Parameter C_MM2S_BTT_USED bound to: 26 - type: integer 
+	Parameter C_MM2S_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_MM2S_INCLUDE_SF bound to: 0 - type: integer 
+	Parameter C_INCLUDE_S2MM bound to: 1 - type: integer 
+	Parameter C_M_AXI_S2MM_AWID bound to: 1 - type: integer 
+	Parameter C_M_AXI_S2MM_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_S2MM_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_S2MM_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_S2MM_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_INCLUDE_S2MM_STSFIFO bound to: 1 - type: integer 
+	Parameter C_S2MM_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
+	Parameter C_S2MM_STSCMD_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
+	Parameter C_S2MM_BURST_SIZE bound to: 16 - type: integer 
+	Parameter C_S2MM_BTT_USED bound to: 26 - type: integer 
+	Parameter C_S2MM_SUPPORT_INDET_BTT bound to: 0 - type: integer 
+	Parameter C_S2MM_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_S2MM_INCLUDE_SF bound to: 0 - type: integer 
+	Parameter C_ENABLE_CACHE_USER bound to: 0 - type: integer 
+	Parameter C_ENABLE_SKID_BUF bound to: 11000 - type: string 
+	Parameter C_ENABLE_MM2S_TKEEP bound to: 1 - type: integer 
+	Parameter C_ENABLE_S2MM_TKEEP bound to: 1 - type: integer 
+	Parameter C_ENABLE_S2MM_ADV_SIG bound to: 0 - type: integer 
+	Parameter C_ENABLE_MM2S_ADV_SIG bound to: 0 - type: integer 
+	Parameter C_MICRO_DMA bound to: 0 - type: integer 
+	Parameter C_CMD_WIDTH bound to: 72 - type: integer 
+	Parameter C_MCDMA bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_full_wrap' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:53572]
+	Parameter C_INCLUDE_MM2S bound to: 1 - type: integer 
+	Parameter C_MM2S_ARID bound to: 0 - type: integer 
+	Parameter C_MM2S_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MM2S_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_MM2S_MDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_MM2S_SDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_INCLUDE_MM2S_STSFIFO bound to: 1 - type: integer 
+	Parameter C_MM2S_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
+	Parameter C_MM2S_STSCMD_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_INCLUDE_MM2S_DRE bound to: 0 - type: integer 
+	Parameter C_MM2S_BURST_SIZE bound to: 16 - type: integer 
+	Parameter C_MM2S_BTT_USED bound to: 26 - type: integer 
+	Parameter C_MM2S_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_INCLUDE_MM2S_GP_SF bound to: 0 - type: integer 
+	Parameter C_ENABLE_CACHE_USER bound to: 0 - type: integer 
+	Parameter C_ENABLE_MM2S_TKEEP bound to: 1 - type: integer 
+	Parameter C_ENABLE_SKID_BUF bound to: 11000 - type: string 
+	Parameter C_MCDMA bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_reset' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+	Parameter C_STSCMD_IS_ASYNC bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_reset' (7#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_INCLUDE_STSFIFO bound to: 1 - type: integer 
+	Parameter C_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
+	Parameter C_STSCMD_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_CMD_WIDTH bound to: 71 - type: integer 
+	Parameter C_STS_WIDTH bound to: 8 - type: integer 
+	Parameter C_ENABLE_CACHE_USER bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 71 - type: integer 
+	Parameter C_DEPTH bound to: 1 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo' (8#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized0' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 8 - type: integer 
+	Parameter C_DEPTH bound to: 1 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized0' (8#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status' (9#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_status_cntl' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:13746]
+	Parameter C_STS_WIDTH bound to: 8 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_status_cntl' (10#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:13746]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
+	Parameter C_IS_MM2S bound to: 1 - type: integer 
+	Parameter C_DRE_ALIGN_WIDTH bound to: 1 - type: integer 
+	Parameter C_SEL_ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 32 - type: integer 
+	Parameter C_MAX_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_CMD_WIDTH bound to: 71 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_BTT_USED bound to: 26 - type: integer 
+	Parameter C_SUPPORT_INDET_BTT bound to: 0 - type: integer 
+	Parameter C_NATIVE_XFER_WIDTH bound to: 32 - type: integer 
+	Parameter C_STRT_SF_OFFSET_WIDTH bound to: 1 - type: integer 
+	Parameter C_MCDMA bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+	Parameter C_OP_MODE bound to: 0 - type: integer 
+	Parameter C_STRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_OFFSET_WIDTH bound to: 2 - type: integer 
+	Parameter C_NUM_BYTES_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2' (11#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2__parameterized0' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+	Parameter C_OP_MODE bound to: 1 - type: integer 
+	Parameter C_STRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_OFFSET_WIDTH bound to: 2 - type: integer 
+	Parameter C_NUM_BYTES_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2__parameterized0' (11#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-226] default block is never used [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:9490]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_pcc' (12#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+	Parameter C_ADDR_FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_ADDR_ID bound to: 0 - type: integer 
+	Parameter C_ADDR_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized1' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 59 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 59 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 59 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+	Parameter C_SIZE bound to: 3 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (13#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_DWIDTH bound to: 59 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (14#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (15#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (16#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized1' (16#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl' (17#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rddata_cntl' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:12185]
+	Parameter C_INCLUDE_DRE bound to: 0 - type: integer 
+	Parameter C_ALIGN_WIDTH bound to: 1 - type: integer 
+	Parameter C_SEL_ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_CNTL_FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter C_MMAP_DWIDTH bound to: 32 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 32 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_ENABLE_MM2S_TKEEP bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rdmux' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10681]
+	Parameter C_SEL_ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MMAP_DWIDTH bound to: 32 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rdmux' (18#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10681]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized2' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 29 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized0' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 29 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 29 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_DWIDTH bound to: 29 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (18#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (18#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized0' (18#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized2' (18#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rddata_cntl' (19#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:12185]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_full_wrap' (20#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:53572]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_full_wrap' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:49997]
+	Parameter C_INCLUDE_S2MM bound to: 1 - type: integer 
+	Parameter C_S2MM_AWID bound to: 1 - type: integer 
+	Parameter C_S2MM_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_S2MM_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S2MM_MDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S2MM_SDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_INCLUDE_S2MM_STSFIFO bound to: 1 - type: integer 
+	Parameter C_S2MM_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
+	Parameter C_S2MM_STSCMD_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
+	Parameter C_S2MM_BURST_SIZE bound to: 16 - type: integer 
+	Parameter C_S2MM_BTT_USED bound to: 26 - type: integer 
+	Parameter C_S2MM_SUPPORT_INDET_BTT bound to: 0 - type: integer 
+	Parameter C_S2MM_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_INCLUDE_S2MM_GP_SF bound to: 0 - type: integer 
+	Parameter C_ENABLE_CACHE_USER bound to: 0 - type: integer 
+	Parameter C_ENABLE_S2MM_TKEEP bound to: 1 - type: integer 
+	Parameter C_ENABLE_SKID_BUF bound to: 11000 - type: string 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_MCDMA bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_status_cntl' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:17704]
+	Parameter C_ENABLE_INDET_BTT bound to: 0 - type: integer 
+	Parameter C_SF_BYTES_RCVD_WIDTH bound to: 26 - type: integer 
+	Parameter C_STS_FIFO_DEPTH bound to: 6 - type: integer 
+	Parameter C_STS_WIDTH bound to: 8 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_MCDMA bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized3' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 2 - type: integer 
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized1' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 2 - type: integer 
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized1' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 2 - type: integer 
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f__parameterized0' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+	Parameter C_SIZE bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f__parameterized0' (20#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized1' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_DWIDTH bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized1' (20#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized1' (20#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized1' (20#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized3' (20#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized4' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 7 - type: integer 
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized2' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 7 - type: integer 
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized2' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 7 - type: integer 
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized2' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_DWIDTH bound to: 7 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized2' (20#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized2' (20#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized2' (20#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized4' (20#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_status_cntl' (21#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:17704]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc__parameterized0' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
+	Parameter C_IS_MM2S bound to: 0 - type: integer 
+	Parameter C_DRE_ALIGN_WIDTH bound to: 1 - type: integer 
+	Parameter C_SEL_ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 32 - type: integer 
+	Parameter C_MAX_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_CMD_WIDTH bound to: 71 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_BTT_USED bound to: 26 - type: integer 
+	Parameter C_SUPPORT_INDET_BTT bound to: 0 - type: integer 
+	Parameter C_NATIVE_XFER_WIDTH bound to: 32 - type: integer 
+	Parameter C_STRT_SF_OFFSET_WIDTH bound to: 1 - type: integer 
+	Parameter C_MCDMA bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:9490]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_pcc__parameterized0' (21#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl__parameterized0' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+	Parameter C_ADDR_FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_ADDR_ID bound to: 1 - type: integer 
+	Parameter C_ADDR_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl__parameterized0' (21#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wrdata_cntl' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:15674]
+	Parameter C_REALIGNER_INCLUDED bound to: 0 - type: integer 
+	Parameter C_ENABLE_INDET_BTT bound to: 0 - type: integer 
+	Parameter C_SF_BYTES_RCVD_WIDTH bound to: 26 - type: integer 
+	Parameter C_SEL_ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_CNTL_FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter C_MMAP_DWIDTH bound to: 32 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 32 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized5' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 27 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized3' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 27 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized3' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 27 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized3' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_DWIDTH bound to: 27 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized3' (21#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized3' (21#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized3' (21#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized5' (21#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wrdata_cntl' (22#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:15674]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid2mm_buf' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:18998]
+	Parameter C_MDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_SDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ADDR_LSB_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_demux' [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:14117]
+	Parameter C_SEL_ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MMAP_DWIDTH bound to: 32 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_demux' (23#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:14117]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid2mm_buf' (24#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:18998]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_full_wrap' (25#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:49997]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (26#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:55436]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_simple_wrap' (27#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:8729]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma' (28#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ipshared/ecc1/hdl/axi_cdma_v4_1_vh_rfs.vhd:15327]
+INFO: [Synth 8-256] done synthesizing module 'dma_demo_axi_cdma_0_0' (29#1) [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_axi_cdma_0_0/synth/dma_demo_axi_cdma_0_0.vhd:114]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 2330.238 ; gain = 0.000 ; free physical = 8664 ; free virtual = 49468
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 2330.238 ; gain = 0.000 ; free physical = 8530 ; free virtual = 49334
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 2330.238 ; gain = 0.000 ; free physical = 8530 ; free virtual = 49334
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2330.238 ; gain = 0.000 ; free physical = 8493 ; free virtual = 49292
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_axi_cdma_0_0/dma_demo_axi_cdma_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_axi_cdma_0_0/dma_demo_axi_cdma_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_axi_cdma_0_0/dma_demo_axi_cdma_0_0.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_axi_cdma_0_0/dma_demo_axi_cdma_0_0.xdc] for cell 'U0'
+Parsing XDC File [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.runs/dma_demo_axi_cdma_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.runs/dma_demo_axi_cdma_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2394.152 ; gain = 0.000 ; free physical = 9779 ; free virtual = 50580
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2394.152 ; gain = 0.000 ; free physical = 9763 ; free virtual = 50563
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 2394.152 ; gain = 63.914 ; free physical = 9979 ; free virtual = 50787
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 2394.152 ; gain = 63.914 ; free physical = 9983 ; free virtual = 50791
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/rom41797/Documents/Project/CDMA_simple_polling/project_1.runs/dma_demo_axi_cdma_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 2394.152 ; gain = 63.914 ; free physical = 9981 ; free virtual = 50789
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'sig_sm_state_reg' in module 'axi_cdma_simple_cntlr'
+INFO: [Synth 8-802] inferred FSM for state register 'sig_pcc_sm_state_reg' in module 'axi_datamover_pcc'
+INFO: [Synth 8-802] inferred FSM for state register 'sig_pcc_sm_state_reg' in module 'axi_datamover_pcc__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                         00000001 |                              000
+             wait_for_go |                         00000010 |                              001
+               ld_dm_cmd |                         00000100 |                              010
+         get_mm2s_status |                         00001000 |                              011
+         get_s2mm_status |                         00010000 |                              100
+            score_status |                         00100000 |                              101
+               xfer_done |                         01000000 |                              110
+              error_trap |                         10000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sig_sm_state_reg' using encoding 'one-hot' in module 'axi_cdma_simple_cntlr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                         00000001 |                              000
+            wait_for_cmd |                         00000010 |                              001
+                  calc_1 |                         00000100 |                              010
+                  calc_2 |                         00001000 |                              011
+                  calc_3 |                         00010000 |                              100
+       wait_on_xfer_push |                         00100000 |                              101
+             chk_if_done |                         01000000 |                              110
+              error_trap |                         10000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sig_pcc_sm_state_reg' using encoding 'one-hot' in module 'axi_datamover_pcc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                         00000001 |                              000
+            wait_for_cmd |                         00000010 |                              001
+                  calc_1 |                         00000100 |                              010
+                  calc_2 |                         00001000 |                              011
+                  calc_3 |                         00010000 |                              100
+       wait_on_xfer_push |                         00100000 |                              101
+             chk_if_done |                         01000000 |                              110
+              error_trap |                         10000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sig_pcc_sm_state_reg' using encoding 'one-hot' in module 'axi_datamover_pcc__parameterized0'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2394.152 ; gain = 63.914 ; free physical = 9884 ; free virtual = 50699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 2     
+	   3 Input    4 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
+	   3 Input    3 Bit       Adders := 6     
+	   2 Input    3 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 4     
++---Registers : 
+	               71 Bit    Registers := 2     
+	               32 Bit    Registers := 11    
+	               26 Bit    Registers := 2     
+	               16 Bit    Registers := 12    
+	                8 Bit    Registers := 9     
+	                6 Bit    Registers := 5     
+	                4 Bit    Registers := 30    
+	                3 Bit    Registers := 10    
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 266   
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 8     
+	   2 Input   16 Bit        Muxes := 9     
+	   2 Input    9 Bit        Muxes := 2     
+	   8 Input    8 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 14    
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 20    
+	   4 Input    4 Bit        Muxes := 8     
+	   2 Input    3 Bit        Muxes := 4     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 115   
+	   8 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 2394.152 ; gain = 63.914 ; free physical = 9514 ; free virtual = 50347
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:39 . Memory (MB): peak = 2394.152 ; gain = 63.914 ; free physical = 9268 ; free virtual = 50097
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2394.152 ; gain = 63.914 ; free physical = 9743 ; free virtual = 50557
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2394.152 ; gain = 63.914 ; free physical = 11419 ; free virtual = 52233
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:47 . Memory (MB): peak = 2394.152 ; gain = 63.914 ; free physical = 11999 ; free virtual = 52818
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:47 . Memory (MB): peak = 2394.152 ; gain = 63.914 ; free physical = 11998 ; free virtual = 52817
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 2394.152 ; gain = 63.914 ; free physical = 11968 ; free virtual = 52787
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 2394.152 ; gain = 63.914 ; free physical = 11968 ; free virtual = 52787
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 2394.152 ; gain = 63.914 ; free physical = 11969 ; free virtual = 52788
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 2394.152 ; gain = 63.914 ; free physical = 11968 ; free virtual = 52787
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+--------------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name                 | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+--------------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | INFERRED_GEN.data_reg[3] | 59     | 59         | 59     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | INFERRED_GEN.data_reg[3] | 29     | 29         | 29     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | INFERRED_GEN.data_reg[5] | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | INFERRED_GEN.data_reg[5] | 7      | 7          | 7      | 0       | 0      | 0      | 0      | 
+|dsrl__4     | INFERRED_GEN.data_reg[3] | 27     | 27         | 27     | 0       | 0      | 0      | 0      | 
+|dsrl__6     | INFERRED_GEN.data_reg[5] | 7      | 7          | 7      | 0       | 0      | 0      | 0      | 
++------------+--------------------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    32|
+|2     |LUT1   |    10|
+|3     |LUT2   |   101|
+|4     |LUT3   |   169|
+|5     |LUT4   |   137|
+|6     |LUT5   |   124|
+|7     |LUT6   |   271|
+|8     |SRL16E |   115|
+|9     |FDRE   |   980|
+|10    |FDSE   |    36|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 2394.152 ; gain = 63.914 ; free physical = 11967 ; free virtual = 52786
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:46 . Memory (MB): peak = 2394.152 ; gain = 0.000 ; free physical = 12010 ; free virtual = 52830
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 2394.152 ; gain = 63.914 ; free physical = 12010 ; free virtual = 52830
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2394.152 ; gain = 0.000 ; free physical = 12064 ; free virtual = 52883
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2394.152 ; gain = 0.000 ; free physical = 11901 ; free virtual = 52720
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+130 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:52 . Memory (MB): peak = 2394.152 ; gain = 64.031 ; free physical = 11308 ; free virtual = 52128
+INFO: [Common 17-1381] The checkpoint '/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.runs/dma_demo_axi_cdma_0_0_synth_1/dma_demo_axi_cdma_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP dma_demo_axi_cdma_0_0, cache-ID = 604c566118ef00a8
+INFO: [Coretcl 2-1174] Renamed 62 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/rom41797/Documents/Project/CDMA_simple_polling/project_1.runs/dma_demo_axi_cdma_0_0_synth_1/dma_demo_axi_cdma_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dma_demo_axi_cdma_0_0_utilization_synth.rpt -pb dma_demo_axi_cdma_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 20 11:26:02 2023...

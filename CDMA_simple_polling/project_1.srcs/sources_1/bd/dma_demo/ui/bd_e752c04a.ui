@@ -1,0 +1,40 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.537338",
+   "Default View_TopLeft":"0,-434",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 7 -x 2350 -y -310 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 7 -x 2350 -y -290 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -x 1815 -y -260 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 650 -y 70 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -x 210 -y 70 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 4 -x 1395 -y 160 -defaultsOSRD
+preplace inst axi_cdma_0 -pg 1 -lvl 3 -x 980 -y 90 -defaultsOSRD
+preplace inst axi_bram_ctrl_1 -pg 1 -lvl 5 -x 1815 -y 330 -defaultsOSRD
+preplace inst axi_bram_ctrl_0_bram -pg 1 -lvl 6 -x 2195 -y 290 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 5 -x 1815 -y 190 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 30 -30 390 -80 820 -10 1130 -10 1570 -150 2050
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 20 -100 NJ -100 NJ -100 NJ -100 NJ -100 2040
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 4 400 -70 800 180 1120 300 1580J
+preplace netloc axi_cdma_0_cdma_introut 1 3 2 1120 -220 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 5 2 NJ -290 NJ
+preplace netloc axi_mem_intercon_M00_AXI 1 4 1 1550 -280n
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 410 -90 NJ -90 NJ -90 NJ -90 2060
+preplace netloc processing_system7_0_DDR 1 5 2 NJ -310 NJ
+preplace netloc axi_cdma_0_M_AXI 1 3 1 N 80
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 5 1 2050J 300n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 3 810 0 N 0 1560
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N 60
+preplace netloc axi_mem_intercon_M01_AXI 1 4 1 N 170
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 5 1 2050 190n
+levelinfo -pg 1 0 210 650 980 1395 1815 2195 2350
+pagesize -pg 1 -db -bbox -sgen 0 -370 2470 740
+"
+}
+{
+   "da_axi4_cnt":"10",
+   "da_bram_cntlr_cnt":"4",
+   "da_ps7_cnt":"1"
+}
