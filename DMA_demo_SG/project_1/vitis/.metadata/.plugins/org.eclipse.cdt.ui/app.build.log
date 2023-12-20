@@ -1,7 +1,0 @@
-15:04:08 **** Clean-only build of configuration Debug for project app ****
-make clean 
-rm -rf  ./src/dma_demo.o ./src/platform.o  ./src/dma_demo.d ./src/platform.d  app.elf.size  app.elf
- 
-
-15:04:08 Build Finished (took 65ms)
-

@@ -1,84 +1,0 @@
-2023-12-18T15:04:03.66195200255-15:04:03 **** Clean-only build of project dma_demo_wrapper ****
-000-buildplatform.sh 37617 dma_demo_wrapper clean 
-000-XSDB Server Channel: tcfchan#21
-000-Cleaning the zynq_fsbl application.
-000-rm -rf  pcap.o  nand.o  qspi.o  nor.o  rsa.o  main.o  fsbl_hooks.o  md5.o  image_mover.o  ps7_init.o  sd.o  fsbl_handoff.o  zyn
-000-q_fsbl_bsp/ps7_cortexa9_0/lib/libxil.a fsbl.elf *.o
-000-
-000-Cleaning the zynq_fsbl application, bsp
-000-make -C ps7_cortexa9_0/libsrc/gpiops_v3_8/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/axidma_v9_12/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/xilffs_v4_4/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/standalone_v7_3/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/emacps_v3_12/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/usbps_v2_6/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_3/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/scutimer_v2_3/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/xadcps_v2_5/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/sdps_v3_10/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/uartps_v3_10/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/scugic_v4_3/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/dmaps_v2_7/src -s clean 
-000-
-000-rm -f ps7_cortexa9_0/lib/libxil.a
-000-
-000-Cleaning the BSP for domain  - standalone_ps7_cortexa9_0
-000-make -C ps7_cortexa9_0/libsrc/gpiops_v3_8/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/axidma_v9_12/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/standalone_v7_3/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/emacps_v3_12/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/usbps_v2_6/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_3/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/scutimer_v2_3/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/xadcps_v2_5/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/sdps_v3_10/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/uartps_v3_10/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/scugic_v4_3/src -s clean 
-000-
-000-make -C ps7_cortexa9_0/libsrc/dmaps_v2_7/src -s clean 
-000-
-000-rm -f ps7_cortexa9_0/lib/libxil.a
-000-
-00255-
-15:04:08 Build Finished (took 4s.873ms)
-
