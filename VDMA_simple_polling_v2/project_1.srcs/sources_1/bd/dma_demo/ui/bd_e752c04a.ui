@@ -1,0 +1,54 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.662338",
+   "Default View_TopLeft":"0,-17",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 7 -x 2020 -y 60 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 7 -x 2020 -y 80 -defaultsOSRD
+preplace port vid_hsync_0 -pg 1 -lvl 7 -x 2020 -y 390 -defaultsOSRD
+preplace port vid_vsync_0 -pg 1 -lvl 7 -x 2020 -y 410 -defaultsOSRD
+preplace portBus Dout_0 -pg 1 -lvl 7 -x 2020 -y 790 -defaultsOSRD
+preplace portBus Dout_1 -pg 1 -lvl 7 -x 2020 -y 680 -defaultsOSRD
+preplace portBus Dout_2 -pg 1 -lvl 7 -x 2020 -y 900 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -x 790 -y 110 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 410 -y 340 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 120 -y 290 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 4 -x 1170 -y 200 -defaultsOSRD
+preplace inst v_tpg_0 -pg 1 -lvl 5 -x 1510 -y 230 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 6 -x 1840 -y 450 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 5 -x 1510 -y 420 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -x 790 -y 440 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 6 -x 1840 -y 680 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 6 -x 1840 -y 790 -defaultsOSRD -resize 180 88
+preplace inst xlslice_2 -pg 1 -lvl 6 -x 1840 -y 900 -defaultsOSRD -resize 180 88
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 20 230 NJ 230 NJ 230 1000
+preplace netloc clk_wiz_0_clk_out1 1 1 5 220 220 590 220 1010 390 1340 320 1680
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 3 230 240 NJ 240 990
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 4 NJ 380 NJ 380 1320 530 1690J
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 2 2 NJ 360 1020
+preplace netloc xlconstant_0_dout 1 3 3 NJ 440 1330 520 1680
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 4 3 1340 610 NJ 610 1990
+preplace netloc v_axi4s_vid_out_0_vid_data 1 5 2 1680 620 2000
+preplace netloc v_axi4s_vid_out_0_vid_hsync 1 6 1 NJ 390
+preplace netloc v_axi4s_vid_out_0_vid_vsync 1 6 1 NJ 410
+preplace netloc xlslice_1_Dout 1 6 1 NJ 790
+preplace netloc xlslice_0_Dout 1 6 1 NJ 680
+preplace netloc xlslice_2_Dout 1 6 1 NJ 900
+preplace netloc processing_system7_0_DDR 1 3 4 NJ 60 NJ 60 NJ 60 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 3 4 NJ 80 NJ 80 NJ 80 NJ
+preplace netloc axi_interconnect_0_M00_AXI 1 4 1 N 200
+preplace netloc processing_system7_0_M_AXI_GP0 1 3 1 1020 120n
+preplace netloc v_tpg_0_m_axis_video 1 5 1 1690 210n
+preplace netloc v_tc_0_vtiming_out 1 5 1 N 410
+levelinfo -pg 1 0 120 410 790 1170 1510 1840 2020
+pagesize -pg 1 -db -bbox -sgen 0 0 2160 960
+"
+}
+{
+   "da_axi4_cnt":"13",
+   "da_board_cnt":"3",
+   "da_clkrst_cnt":"9",
+   "da_ps7_cnt":"2"
+}
