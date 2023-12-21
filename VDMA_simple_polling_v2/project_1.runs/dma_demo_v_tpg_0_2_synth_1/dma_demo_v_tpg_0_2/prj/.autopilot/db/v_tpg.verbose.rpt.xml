@@ -1,0 +1,142 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'v_tpg'" level="0">
+<item name = "Date">Thu Dec 21 11:33:33 2023
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
+<item name = "Project">dma_demo_v_tpg_0_2</item>
+<item name = "Solution">prj (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z010-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">6.73 ns, 6.649 ns, 1.82 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="tpgBackground_U0">tpgBackground, ?, ?, ?, ?, ?, ?, none</column>
+<column name="tpgForeground_U0">tpgForeground, ?, ?, ?, ?, ?, ?, none</column>
+<column name="MultiPixStream2AXIvideo_U0">MultiPixStream2AXIvideo, 1, 232321, 6.734 ns, 1.564 ms, 1, 232321, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 2, -</column>
+<column name="FIFO">-, -, 198, 136, -</column>
+<column name="Instance">5, 9, 5972, 6912, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, -, -, -</column>
+<specialColumn name="Available">120, 80, 35200, 17600, 0</specialColumn>
+<specialColumn name="Utilization (%)">4, 11, 17, 40, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="CTRL_s_axi_U">CTRL_s_axi, 0, 0, 442, 600, 0</column>
+<column name="MultiPixStream2AXIvideo_U0">MultiPixStream2AXIvideo, 0, 0, 72, 342, 0</column>
+<column name="tpgBackground_U0">tpgBackground, 5, 9, 5187, 5095, 0</column>
+<column name="tpgForeground_U0">tpgForeground, 0, 0, 271, 875, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="bckgndYUV_U">0, 99, 0, -, 16, 24, 384</column>
+<column name="ovrlayYUV_U">0, 99, 0, -, 16, 24, 384</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_CTRL_AWVALID">in, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_AWREADY">out, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_AWADDR">in, 8, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_WVALID">in, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_WREADY">out, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_WDATA">in, 32, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_WSTRB">in, 4, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_ARVALID">in, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_ARREADY">out, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_ARADDR">in, 8, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_RVALID">out, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_RREADY">in, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_RDATA">out, 32, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_RRESP">out, 2, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_BVALID">out, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_BREADY">in, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_BRESP">out, 2, s_axi, CTRL, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, v_tpg, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, v_tpg, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, v_tpg, return value</column>
+<column name="fid_in">in, 1, ap_stable, fid_in, pointer</column>
+<column name="m_axis_video_TDATA">out, 24, axis, m_axis_video_V_data_V, pointer</column>
+<column name="m_axis_video_TKEEP">out, 3, axis, m_axis_video_V_keep_V, pointer</column>
+<column name="m_axis_video_TSTRB">out, 3, axis, m_axis_video_V_strb_V, pointer</column>
+<column name="m_axis_video_TUSER">out, 1, axis, m_axis_video_V_user_V, pointer</column>
+<column name="m_axis_video_TLAST">out, 1, axis, m_axis_video_V_last_V, pointer</column>
+<column name="m_axis_video_TID">out, 1, axis, m_axis_video_V_id_V, pointer</column>
+<column name="m_axis_video_TDEST">out, 1, axis, m_axis_video_V_dest_V, pointer</column>
+<column name="m_axis_video_TVALID">out, 1, axis, m_axis_video_V_dest_V, pointer</column>
+<column name="m_axis_video_TREADY">in, 1, axis, m_axis_video_V_dest_V, pointer</column>
+<column name="fid">out, 1, ap_vld, fid, pointer</column>
+<column name="fid_ap_vld">out, 1, ap_vld, fid, pointer</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
---Date        : Mon Dec 18 16:43:58 2023
+--Date        : Thu Dec 21 11:32:37 2023
 --Host        : ei-lan-398 running 64-bit Debian GNU/Linux 10 (buster)
 --Command     : generate_target dma_demo_wrapper.bd
 --Design      : dma_demo_wrapper
@@ -28,24 +28,23 @@ entity dma_demo_wrapper is
     DDR_ras_n : inout STD_LOGIC;
     DDR_reset_n : inout STD_LOGIC;
     DDR_we_n : inout STD_LOGIC;
+    Dout_0 : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    Dout_1 : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    Dout_2 : out STD_LOGIC_VECTOR ( 3 downto 0 );
     FIXED_IO_ddr_vrn : inout STD_LOGIC;
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    vid_hsync_0 : out STD_LOGIC;
+    vid_vsync_0 : out STD_LOGIC
   );
 end dma_demo_wrapper;
 
 architecture STRUCTURE of dma_demo_wrapper is
   component dma_demo is
   port (
-    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
-    FIXED_IO_ddr_vrn : inout STD_LOGIC;
-    FIXED_IO_ddr_vrp : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC;
-    FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC;
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -60,7 +59,18 @@ architecture STRUCTURE of dma_demo_wrapper is
     DDR_dm : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_dq : inout STD_LOGIC_VECTOR ( 31 downto 0 );
     DDR_dqs_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 )
+    DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
+    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
+    FIXED_IO_ddr_vrn : inout STD_LOGIC;
+    FIXED_IO_ddr_vrp : inout STD_LOGIC;
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    FIXED_IO_ps_clk : inout STD_LOGIC;
+    FIXED_IO_ps_porb : inout STD_LOGIC;
+    vid_hsync_0 : out STD_LOGIC;
+    vid_vsync_0 : out STD_LOGIC;
+    Dout_0 : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    Dout_1 : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    Dout_2 : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component dma_demo;
 begin
@@ -81,11 +91,16 @@ dma_demo_i: component dma_demo
       DDR_ras_n => DDR_ras_n,
       DDR_reset_n => DDR_reset_n,
       DDR_we_n => DDR_we_n,
+      Dout_0(3 downto 0) => Dout_0(3 downto 0),
+      Dout_1(3 downto 0) => Dout_1(3 downto 0),
+      Dout_2(3 downto 0) => Dout_2(3 downto 0),
       FIXED_IO_ddr_vrn => FIXED_IO_ddr_vrn,
       FIXED_IO_ddr_vrp => FIXED_IO_ddr_vrp,
       FIXED_IO_mio(53 downto 0) => FIXED_IO_mio(53 downto 0),
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
-      FIXED_IO_ps_srstb => FIXED_IO_ps_srstb
+      FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
+      vid_hsync_0 => vid_hsync_0,
+      vid_vsync_0 => vid_vsync_0
     );
 end STRUCTURE;

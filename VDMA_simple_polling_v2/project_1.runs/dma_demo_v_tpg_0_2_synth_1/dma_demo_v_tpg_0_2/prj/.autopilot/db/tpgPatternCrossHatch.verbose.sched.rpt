@@ -1,0 +1,248 @@
+
+
+================================================================
+== Vitis HLS Report for 'tpgPatternCrossHatch'
+================================================================
+* Date:           Thu Dec 21 11:33:26 2023
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        dma_demo_v_tpg_0_2
+* Solution:       prj (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z010-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.73 ns|  4.907 ns|     1.82 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        4|        4|  26.936 ns|  26.936 ns|    1|    1|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 5
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 5, States = { 1 2 3 4 5 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.50>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%color_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %color" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1430]   --->   Operation 6 'read' 'color_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%height_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %height" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1430]   --->   Operation 7 'read' 'height_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%width_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %width" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1430]   --->   Operation 8 'read' 'width_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%x_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %x" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1430]   --->   Operation 9 'read' 'x_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%y_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %y" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1430]   --->   Operation 10 'read' 'y_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%zext_ln1435 = zext i16 %width_read" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1435]   --->   Operation 11 'zext' 'zext_ln1435' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%trunc_ln1435 = trunc i16 %width_read" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1435]   --->   Operation 12 'trunc' 'trunc_ln1435' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (1.81ns)   --->   "%add_ln1435 = add i14 %trunc_ln1435, i14 15" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1435]   --->   Operation 13 'add' 'add_ln1435' <Predicate = true> <Delay = 1.81> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i10 @_ssdm_op_PartSelect.i10.i14.i32.i32, i14 %add_ln1435, i32 4, i32 13" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1435]   --->   Operation 14 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln1437 = zext i16 %height_read" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1437]   --->   Operation 15 'zext' 'zext_ln1437' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%trunc_ln1437 = trunc i16 %height_read" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1437]   --->   Operation 16 'trunc' 'trunc_ln1437' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln1443 = zext i16 %y_read" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1443]   --->   Operation 17 'zext' 'zext_ln1443' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (2.42ns)   --->   "%icmp_ln1443 = icmp_eq  i16 %y_read, i16 0" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1443]   --->   Operation 18 'icmp' 'icmp_ln1443' <Predicate = true> <Delay = 2.42> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%trunc_ln1443 = trunc i16 %x_read" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1443]   --->   Operation 19 'trunc' 'trunc_ln1443' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln1443_1 = zext i16 %x_read" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1443]   --->   Operation 20 'zext' 'zext_ln1443_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (2.42ns)   --->   "%icmp_ln1443_1 = icmp_eq  i16 %x_read, i16 0" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1443]   --->   Operation 21 'icmp' 'icmp_ln1443_1' <Predicate = true> <Delay = 2.42> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%br_ln1443 = br i1 %icmp_ln1443, void, void" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1443]   --->   Operation 22 'br' 'br_ln1443' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (2.07ns)   --->   "%add_ln1443 = add i17 %zext_ln1437, i17 131071" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1443]   --->   Operation 23 'add' 'add_ln1443' <Predicate = (!icmp_ln1443)> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (2.43ns)   --->   "%icmp_ln1443_2 = icmp_eq  i17 %zext_ln1443, i17 %add_ln1443" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1443]   --->   Operation 24 'icmp' 'icmp_ln1443_2' <Predicate = (!icmp_ln1443)> <Delay = 2.43> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%br_ln1443 = br i1 %icmp_ln1443_1, void %._crit_edge4, void %._crit_edge" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1443]   --->   Operation 25 'br' 'br_ln1443' <Predicate = (icmp_ln1443)> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (2.07ns)   --->   "%sub29 = add i17 %zext_ln1435, i17 131071" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1435]   --->   Operation 26 'add' 'sub29' <Predicate = true> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (1.55ns)   --->   "%cmp57 = icmp_eq  i8 %color_read, i8 0" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1430]   --->   Operation 27 'icmp' 'cmp57' <Predicate = true> <Delay = 1.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 28 [1/1] (1.55ns)   --->   "%cmp59 = icmp_eq  i8 %color_read, i8 1" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1430]   --->   Operation 28 'icmp' 'cmp59' <Predicate = true> <Delay = 1.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%br_ln1462 = br i1 %icmp_ln1443_1, void, void" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1462]   --->   Operation 29 'br' 'br_ln1462' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (2.43ns)   --->   "%icmp_ln1467 = icmp_eq  i17 %zext_ln1443_1, i17 %sub29" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1467]   --->   Operation 30 'icmp' 'icmp_ln1467' <Predicate = (!icmp_ln1443_1)> <Delay = 2.43> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%br_ln1467 = br i1 %icmp_ln1467, void, void" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1467]   --->   Operation 31 'br' 'br_ln1467' <Predicate = (!icmp_ln1443_1)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 3.54>
+ST_2 : Operation 32 [1/1] (1.73ns)   --->   "%barWidthMinSamples_V = add i10 %trunc_ln, i10 1023"   --->   Operation 32 'add' 'barWidthMinSamples_V' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 33 [2/2] (0.00ns)   --->   "%barWidthMinSamples_delayed_V = call i10 @reg<ap_uint<10> >, i10 %barWidthMinSamples_V" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1436]   --->   Operation 33 'call' 'barWidthMinSamples_delayed_V' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 34 [1/1] (1.81ns)   --->   "%add_ln1437 = add i14 %trunc_ln1437, i14 15" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1437]   --->   Operation 34 'add' 'add_ln1437' <Predicate = true> <Delay = 1.81> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 35 [1/1] (0.97ns)   --->   "%and_ln1443 = and i1 %icmp_ln1443_2, i1 %icmp_ln1443_1" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1443]   --->   Operation 35 'and' 'and_ln1443' <Predicate = (!icmp_ln1443)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%br_ln1443 = br i1 %and_ln1443, void %._crit_edge4, void %._crit_edge" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1443]   --->   Operation 36 'br' 'br_ln1443' <Predicate = (!icmp_ln1443)> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%tmp = partselect i10 @_ssdm_op_PartSelect.i10.i14.i32.i32, i14 %add_ln1437, i32 4, i32 13"   --->   Operation 37 'partselect' 'tmp' <Predicate = (icmp_ln1443 & !icmp_ln1443_1) | (!icmp_ln1443 & !and_ln1443)> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%zext_ln1347 = zext i10 %tmp"   --->   Operation 38 'zext' 'zext_ln1347' <Predicate = (icmp_ln1443 & !icmp_ln1443_1) | (!icmp_ln1443 & !and_ln1443)> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (1.73ns)   --->   "%ret = add i11 %zext_ln1347, i11 2047"   --->   Operation 39 'add' 'ret' <Predicate = (icmp_ln1443 & !icmp_ln1443_1) | (!icmp_ln1443 & !and_ln1443)> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 40 [1/1] (1.58ns)   --->   "%store_ln1445 = store i10 0, i10 %yCount_V_2" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1445]   --->   Operation 40 'store' 'store_ln1445' <Predicate = (icmp_ln1443 & icmp_ln1443_1) | (!icmp_ln1443 & and_ln1443)> <Delay = 1.58>
+ST_2 : Operation 41 [1/1] (1.58ns)   --->   "%store_ln1446 = store i1 1, i1 %vHatch" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1446]   --->   Operation 41 'store' 'store_ln1446' <Predicate = (icmp_ln1443 & icmp_ln1443_1) | (!icmp_ln1443 & and_ln1443)> <Delay = 1.58>
+ST_2 : Operation 42 [1/1] (1.70ns)   --->   "%br_ln1447 = br void" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1447]   --->   Operation 42 'br' 'br_ln1447' <Predicate = (icmp_ln1443 & icmp_ln1443_1) | (!icmp_ln1443 & and_ln1443)> <Delay = 1.70>
+ST_2 : Operation 43 [1/1] (1.58ns)   --->   "%store_ln1470 = store i10 0, i10 %xCount_V_2" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1470]   --->   Operation 43 'store' 'store_ln1470' <Predicate = (!icmp_ln1443_1 & icmp_ln1467)> <Delay = 1.58>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%br_ln1471 = br void %.thread" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1471]   --->   Operation 44 'br' 'br_ln1471' <Predicate = (!icmp_ln1443_1 & icmp_ln1467)> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (1.58ns)   --->   "%store_ln1465 = store i10 0, i10 %xCount_V_2" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1465]   --->   Operation 45 'store' 'store_ln1465' <Predicate = (icmp_ln1443_1)> <Delay = 1.58>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%br_ln1466 = br void %.thread" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1466]   --->   Operation 46 'br' 'br_ln1466' <Predicate = (icmp_ln1443_1)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 4.90>
+ST_3 : Operation 47 [1/2] (0.00ns)   --->   "%barWidthMinSamples_delayed_V = call i10 @reg<ap_uint<10> >, i10 %barWidthMinSamples_V" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1436]   --->   Operation 47 'call' 'barWidthMinSamples_delayed_V' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%yCount_V_2_load = load i10 %yCount_V_2"   --->   Operation 48 'load' 'yCount_V_2_load' <Predicate = (icmp_ln1443 & !icmp_ln1443_1) | (!icmp_ln1443 & !and_ln1443)> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%zext_ln870 = zext i10 %yCount_V_2_load"   --->   Operation 49 'zext' 'zext_ln870' <Predicate = (icmp_ln1443 & !icmp_ln1443_1) | (!icmp_ln1443 & !and_ln1443)> <Delay = 0.00>
+ST_3 : Operation 50 [1/1] (1.88ns)   --->   "%icmp_ln870 = icmp_eq  i11 %zext_ln870, i11 %ret"   --->   Operation 50 'icmp' 'icmp_ln870' <Predicate = (icmp_ln1443 & !icmp_ln1443_1) | (!icmp_ln1443 & !and_ln1443)> <Delay = 1.88> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 51 [1/1] (0.97ns)   --->   "%and_ln1448 = and i1 %icmp_ln870, i1 %icmp_ln1443_1" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1448]   --->   Operation 51 'and' 'and_ln1448' <Predicate = (icmp_ln1443 & !icmp_ln1443_1) | (!icmp_ln1443 & !and_ln1443)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln1448 = br i1 %and_ln1448, void, void" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1448]   --->   Operation 52 'br' 'br_ln1448' <Predicate = (icmp_ln1443 & !icmp_ln1443_1) | (!icmp_ln1443 & !and_ln1443)> <Delay = 0.00>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%br_ln1453 = br i1 %icmp_ln1443_1, void %thread-pre-split, void" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1453]   --->   Operation 53 'br' 'br_ln1453' <Predicate = (icmp_ln1443 & !icmp_ln1443_1 & !and_ln1448) | (!icmp_ln1443 & !and_ln1443 & !and_ln1448)> <Delay = 0.00>
+ST_3 : Operation 54 [1/1] (0.00ns)   --->   "%vHatch_load = load i1 %vHatch"   --->   Operation 54 'load' 'vHatch_load' <Predicate = (!and_ln1443 & !icmp_ln1443_1 & !and_ln1448) | (icmp_ln1443 & !icmp_ln1443_1 & !and_ln1448)> <Delay = 0.00>
+ST_3 : Operation 55 [1/1] (1.70ns)   --->   "%br_ln0 = br void"   --->   Operation 55 'br' 'br_ln0' <Predicate = (!and_ln1443 & !icmp_ln1443_1 & !and_ln1448) | (icmp_ln1443 & !icmp_ln1443_1 & !and_ln1448)> <Delay = 1.70>
+ST_3 : Operation 56 [1/1] (1.73ns)   --->   "%add_ln691 = add i10 %yCount_V_2_load, i10 1"   --->   Operation 56 'add' 'add_ln691' <Predicate = (!icmp_ln1443 & !and_ln1443 & icmp_ln1443_1 & !and_ln1448)> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 57 [1/1] (1.58ns)   --->   "%store_ln691 = store i10 %add_ln691, i10 %yCount_V_2"   --->   Operation 57 'store' 'store_ln691' <Predicate = (!icmp_ln1443 & !and_ln1443 & icmp_ln1443_1 & !and_ln1448)> <Delay = 1.58>
+ST_3 : Operation 58 [1/1] (1.58ns)   --->   "%store_ln1456 = store i1 0, i1 %vHatch" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1456]   --->   Operation 58 'store' 'store_ln1456' <Predicate = (!icmp_ln1443 & !and_ln1443 & icmp_ln1443_1 & !and_ln1448)> <Delay = 1.58>
+ST_3 : Operation 59 [1/1] (1.70ns)   --->   "%br_ln1457 = br void" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1457]   --->   Operation 59 'br' 'br_ln1457' <Predicate = (!icmp_ln1443 & !and_ln1443 & icmp_ln1443_1 & !and_ln1448)> <Delay = 1.70>
+ST_3 : Operation 60 [1/1] (1.58ns)   --->   "%store_ln1450 = store i10 0, i10 %yCount_V_2" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1450]   --->   Operation 60 'store' 'store_ln1450' <Predicate = (icmp_ln1443 & !icmp_ln1443_1 & and_ln1448) | (!icmp_ln1443 & !and_ln1443 & and_ln1448)> <Delay = 1.58>
+ST_3 : Operation 61 [1/1] (1.58ns)   --->   "%store_ln1451 = store i1 1, i1 %vHatch" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1451]   --->   Operation 61 'store' 'store_ln1451' <Predicate = (icmp_ln1443 & !icmp_ln1443_1 & and_ln1448) | (!icmp_ln1443 & !and_ln1443 & and_ln1448)> <Delay = 1.58>
+ST_3 : Operation 62 [1/1] (1.70ns)   --->   "%br_ln1452 = br void" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1452]   --->   Operation 62 'br' 'br_ln1452' <Predicate = (icmp_ln1443 & !icmp_ln1443_1 & and_ln1448) | (!icmp_ln1443 & !and_ln1443 & and_ln1448)> <Delay = 1.70>
+ST_3 : Operation 63 [1/1] (0.00ns)   --->   "%empty = phi i1 %vHatch_load, void %thread-pre-split, i1 1, void %._crit_edge, i1 1, void, i1 0, void"   --->   Operation 63 'phi' 'empty' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 64 [1/1] (0.00ns)   --->   "%xCount_V_2_load = load i10 %xCount_V_2"   --->   Operation 64 'load' 'xCount_V_2_load' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467)> <Delay = 0.00>
+ST_3 : Operation 65 [1/1] (1.77ns)   --->   "%icmp_ln878 = icmp_ult  i10 %xCount_V_2_load, i10 %barWidthMinSamples_delayed_V"   --->   Operation 65 'icmp' 'icmp_ln878' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467)> <Delay = 1.77> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 66 [1/1] (0.00ns)   --->   "%br_ln1472 = br i1 %icmp_ln878, void, void" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1472]   --->   Operation 66 'br' 'br_ln1472' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467)> <Delay = 0.00>
+ST_3 : Operation 67 [1/1] (1.77ns)   --->   "%icmp_ln870_1 = icmp_eq  i10 %xCount_V_2_load, i10 %barWidthMinSamples_delayed_V"   --->   Operation 67 'icmp' 'icmp_ln870_1' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & !icmp_ln878)> <Delay = 1.77> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 68 [1/1] (0.00ns)   --->   "%br_ln1477 = br i1 %icmp_ln870_1, void, void" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1477]   --->   Operation 68 'br' 'br_ln1477' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & !icmp_ln878)> <Delay = 0.00>
+ST_3 : Operation 69 [1/1] (1.73ns)   --->   "%sub_ln692 = sub i10 %xCount_V_2_load, i10 %barWidthMinSamples_delayed_V"   --->   Operation 69 'sub' 'sub_ln692' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & !icmp_ln878 & !icmp_ln870_1)> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 70 [1/1] (1.58ns)   --->   "%br_ln0 = br void"   --->   Operation 70 'br' 'br_ln0' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & !icmp_ln878 & !icmp_ln870_1)> <Delay = 1.58>
+ST_3 : Operation 71 [1/1] (1.58ns)   --->   "%store_ln1479 = store i10 0, i10 %xCount_V_2" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1479]   --->   Operation 71 'store' 'store_ln1479' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & !icmp_ln878 & icmp_ln870_1)> <Delay = 1.58>
+ST_3 : Operation 72 [1/1] (0.00ns)   --->   "%br_ln1481 = br void %.thread" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1481]   --->   Operation 72 'br' 'br_ln1481' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & !icmp_ln878 & icmp_ln870_1)> <Delay = 0.00>
+ST_3 : Operation 73 [1/1] (1.73ns)   --->   "%add_ln691_2 = add i10 %xCount_V_2_load, i10 1"   --->   Operation 73 'add' 'add_ln691_2' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & icmp_ln878)> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 74 [1/1] (1.58ns)   --->   "%br_ln1476 = br void" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1476]   --->   Operation 74 'br' 'br_ln1476' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & icmp_ln878)> <Delay = 1.58>
+ST_3 : Operation 75 [1/1] (0.00ns)   --->   "%storemerge = phi i10 %sub_ln692, void, i10 %add_ln691_2, void"   --->   Operation 75 'phi' 'storemerge' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & !icmp_ln870_1) | (!icmp_ln1443_1 & !icmp_ln1467 & icmp_ln878)> <Delay = 0.00>
+ST_3 : Operation 76 [1/1] (1.58ns)   --->   "%store_ln691 = store i10 %storemerge, i10 %xCount_V_2"   --->   Operation 76 'store' 'store_ln691' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & !icmp_ln870_1) | (!icmp_ln1443_1 & !icmp_ln1467 & icmp_ln878)> <Delay = 1.58>
+ST_3 : Operation 77 [1/1] (0.00ns)   --->   "%br_ln1488 = br i1 %empty, void, void %.thread" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1488]   --->   Operation 77 'br' 'br_ln1488' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & !icmp_ln870_1) | (!icmp_ln1443_1 & !icmp_ln1467 & icmp_ln878)> <Delay = 0.00>
+ST_3 : Operation 78 [1/1] (0.00ns) (grouped into LUT with out node select_ln1503)   --->   "%select_ln1503_1 = select i1 %cmp59, i2 1, i2 2" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1503]   --->   Operation 78 'select' 'select_ln1503_1' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & !icmp_ln870_1 & !empty & !cmp57) | (!icmp_ln1443_1 & !icmp_ln1467 & icmp_ln878 & !empty & !cmp57)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 79 [1/1] (0.00ns) (grouped into LUT with out node select_ln1503)   --->   "%or_ln1503 = or i1 %cmp59, i1 %trunc_ln1443" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1503]   --->   Operation 79 'or' 'or_ln1503' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & !icmp_ln870_1 & !empty & !cmp57) | (!icmp_ln1443_1 & !icmp_ln1467 & icmp_ln878 & !empty & !cmp57)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 80 [1/1] (0.99ns) (out node of the LUT)   --->   "%select_ln1503 = select i1 %or_ln1503, i2 %select_ln1503_1, i2 1" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1503]   --->   Operation 80 'select' 'select_ln1503' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & !icmp_ln870_1 & !empty & !cmp57) | (!icmp_ln1443_1 & !icmp_ln1467 & icmp_ln878 & !empty & !cmp57)> <Delay = 0.99> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 81 [1/1] (0.00ns)   --->   "%zext_ln1503 = zext i2 %select_ln1503" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1503]   --->   Operation 81 'zext' 'zext_ln1503' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & !icmp_ln870_1 & !empty & !cmp57) | (!icmp_ln1443_1 & !icmp_ln1467 & icmp_ln878 & !empty & !cmp57)> <Delay = 0.00>
+ST_3 : Operation 82 [1/1] (0.00ns)   --->   "%blkYuv_1_addr = getelementptr i8 %blkYuv_1, i64 0, i64 %zext_ln1503" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1503]   --->   Operation 82 'getelementptr' 'blkYuv_1_addr' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & !icmp_ln870_1 & !empty & !cmp57) | (!icmp_ln1443_1 & !icmp_ln1467 & icmp_ln878 & !empty & !cmp57)> <Delay = 0.00>
+ST_3 : Operation 83 [2/2] (2.32ns)   --->   "%blkYuv_1_load = load i2 %blkYuv_1_addr" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1503]   --->   Operation 83 'load' 'blkYuv_1_load' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & !icmp_ln870_1 & !empty & !cmp57) | (!icmp_ln1443_1 & !icmp_ln1467 & icmp_ln878 & !empty & !cmp57)> <Delay = 2.32> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 3> <ROM>
+ST_3 : Operation 84 [1/1] (0.00ns) (grouped into LUT with out node select_ln1494)   --->   "%select_ln1494_1 = select i1 %cmp59, i2 1, i2 2" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1494]   --->   Operation 84 'select' 'select_ln1494_1' <Predicate = (empty & !cmp57) | (!icmp_ln878 & icmp_ln870_1 & !cmp57) | (icmp_ln1467 & !cmp57) | (icmp_ln1443_1 & !cmp57)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 85 [1/1] (0.00ns) (grouped into LUT with out node select_ln1494)   --->   "%or_ln1494 = or i1 %cmp59, i1 %trunc_ln1443" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1494]   --->   Operation 85 'or' 'or_ln1494' <Predicate = (empty & !cmp57) | (!icmp_ln878 & icmp_ln870_1 & !cmp57) | (icmp_ln1467 & !cmp57) | (icmp_ln1443_1 & !cmp57)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 86 [1/1] (0.99ns) (out node of the LUT)   --->   "%select_ln1494 = select i1 %or_ln1494, i2 %select_ln1494_1, i2 1" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1494]   --->   Operation 86 'select' 'select_ln1494' <Predicate = (empty & !cmp57) | (!icmp_ln878 & icmp_ln870_1 & !cmp57) | (icmp_ln1467 & !cmp57) | (icmp_ln1443_1 & !cmp57)> <Delay = 0.99> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 87 [1/1] (0.00ns)   --->   "%zext_ln1494 = zext i2 %select_ln1494" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1494]   --->   Operation 87 'zext' 'zext_ln1494' <Predicate = (empty & !cmp57) | (!icmp_ln878 & icmp_ln870_1 & !cmp57) | (icmp_ln1467 & !cmp57) | (icmp_ln1443_1 & !cmp57)> <Delay = 0.00>
+ST_3 : Operation 88 [1/1] (0.00ns)   --->   "%whiYuv_1_addr = getelementptr i8 %whiYuv_1, i64 0, i64 %zext_ln1494" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1494]   --->   Operation 88 'getelementptr' 'whiYuv_1_addr' <Predicate = (empty & !cmp57) | (!icmp_ln878 & icmp_ln870_1 & !cmp57) | (icmp_ln1467 & !cmp57) | (icmp_ln1443_1 & !cmp57)> <Delay = 0.00>
+ST_3 : Operation 89 [2/2] (2.32ns)   --->   "%whiYuv_1_load = load i2 %whiYuv_1_addr" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1494]   --->   Operation 89 'load' 'whiYuv_1_load' <Predicate = (empty & !cmp57) | (!icmp_ln878 & icmp_ln870_1 & !cmp57) | (icmp_ln1467 & !cmp57) | (icmp_ln1443_1 & !cmp57)> <Delay = 2.32> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 3> <ROM>
+
+State 4 <SV = 3> <Delay = 2.32>
+ST_4 : Operation 90 [1/1] (1.24ns)   --->   "%conv_i10 = select i1 %cmp57, i8 255, i8 128" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1430]   --->   Operation 90 'select' 'conv_i10' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 91 [1/1] (1.24ns)   --->   "%conv_i = select i1 %cmp57, i8 0, i8 128" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1430]   --->   Operation 91 'select' 'conv_i' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 92 [1/1] (1.82ns)   --->   "%br_ln1503 = br i1 %cmp57, void, void %.thread._crit_edge" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1503]   --->   Operation 92 'br' 'br_ln1503' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & !icmp_ln870_1 & !empty) | (!icmp_ln1443_1 & !icmp_ln1467 & icmp_ln878 & !empty)> <Delay = 1.82>
+ST_4 : Operation 93 [1/2] (2.32ns)   --->   "%blkYuv_1_load = load i2 %blkYuv_1_addr" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1503]   --->   Operation 93 'load' 'blkYuv_1_load' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & !icmp_ln870_1 & !empty & !cmp57) | (!icmp_ln1443_1 & !icmp_ln1467 & icmp_ln878 & !empty & !cmp57)> <Delay = 2.32> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 3> <ROM>
+ST_4 : Operation 94 [1/1] (1.82ns)   --->   "%br_ln1503 = br void %.thread._crit_edge" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1503]   --->   Operation 94 'br' 'br_ln1503' <Predicate = (!icmp_ln1443_1 & !icmp_ln1467 & !icmp_ln870_1 & !empty & !cmp57) | (!icmp_ln1443_1 & !icmp_ln1467 & icmp_ln878 & !empty & !cmp57)> <Delay = 1.82>
+ST_4 : Operation 95 [1/1] (1.82ns)   --->   "%br_ln1494 = br i1 %cmp57, void, void %.thread._crit_edge" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1494]   --->   Operation 95 'br' 'br_ln1494' <Predicate = (empty) | (!icmp_ln878 & icmp_ln870_1) | (icmp_ln1467) | (icmp_ln1443_1)> <Delay = 1.82>
+ST_4 : Operation 96 [1/2] (2.32ns)   --->   "%whiYuv_1_load = load i2 %whiYuv_1_addr" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1494]   --->   Operation 96 'load' 'whiYuv_1_load' <Predicate = (empty & !cmp57) | (!icmp_ln878 & icmp_ln870_1 & !cmp57) | (icmp_ln1467 & !cmp57) | (icmp_ln1443_1 & !cmp57)> <Delay = 2.32> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 3> <ROM>
+ST_4 : Operation 97 [1/1] (1.82ns)   --->   "%br_ln1494 = br void %.thread._crit_edge" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1494]   --->   Operation 97 'br' 'br_ln1494' <Predicate = (empty & !cmp57) | (!icmp_ln878 & icmp_ln870_1 & !cmp57) | (icmp_ln1467 & !cmp57) | (icmp_ln1443_1 & !cmp57)> <Delay = 1.82>
+
+State 5 <SV = 4> <Delay = 0.99>
+ST_5 : Operation 98 [1/1] (0.00ns) (grouped into LUT with out node select_ln1494_2)   --->   "%agg_result_0 = phi i1 1, void %.thread, i1 1, void, i1 0, void, i1 0, void"   --->   Operation 98 'phi' 'agg_result_0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 99 [1/1] (0.00ns)   --->   "%pix_val_V_1 = phi i8 255, void %.thread, i8 %whiYuv_1_load, void, i8 0, void, i8 %blkYuv_1_load, void" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1494]   --->   Operation 99 'phi' 'pix_val_V_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 100 [1/1] (0.00ns)   --->   "%pix_val_V_2 = phi i8 %conv_i10, void %.thread, i8 %conv_i10, void, i8 %conv_i, void, i8 %conv_i, void" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1430]   --->   Operation 100 'phi' 'pix_val_V_2' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 101 [1/1] (0.99ns) (out node of the LUT)   --->   "%select_ln1494_2 = select i1 %agg_result_0, i8 255, i8 0" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1494]   --->   Operation 101 'select' 'select_ln1494_2' <Predicate = true> <Delay = 0.99> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 102 [1/1] (0.00ns)   --->   "%mrv = insertvalue i24 <undef>, i8 %select_ln1494_2" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1507]   --->   Operation 102 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 103 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i24 %mrv, i8 %pix_val_V_1" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1507]   --->   Operation 103 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 104 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue i24 %mrv_1, i8 %pix_val_V_2" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1507]   --->   Operation 104 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 105 [1/1] (0.00ns)   --->   "%ret_ln1507 = ret i24 %mrv_2" [/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1507]   --->   Operation 105 'ret' 'ret_ln1507' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.73ns, clock uncertainty: 1.82ns.
+
+ <State 1>: 4.51ns
+The critical path consists of the following:
+	wire read on port 'width' (/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1430) [17]  (0 ns)
+	'add' operation ('sub29', /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1435) [71]  (2.08 ns)
+	'icmp' operation ('icmp_ln1467', /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1467) [78]  (2.43 ns)
+
+ <State 2>: 3.54ns
+The critical path consists of the following:
+	'add' operation ('add_ln1437', /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1437) [28]  (1.81 ns)
+	'add' operation ('ret') [45]  (1.73 ns)
+
+ <State 3>: 4.91ns
+The critical path consists of the following:
+	'call' operation ('barWidthMinSamples_delayed.V', /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1436) to 'reg<ap_uint<10> >' [25]  (0 ns)
+	'sub' operation ('sub_ln692') [88]  (1.73 ns)
+	multiplexor before 'phi' operation ('storemerge') with incoming values : ('sub_ln692') ('add_ln691_2') [97]  (1.59 ns)
+	'phi' operation ('storemerge') with incoming values : ('sub_ln692') ('add_ln691_2') [97]  (0 ns)
+	'store' operation ('store_ln691') of variable 'storemerge' on static variable 'xCount_V_2' [98]  (1.59 ns)
+
+ <State 4>: 2.32ns
+The critical path consists of the following:
+	'load' operation ('blkYuv_1_load', /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1503) on array 'blkYuv_1' [108]  (2.32 ns)
+
+ <State 5>: 0.993ns
+The critical path consists of the following:
+	'phi' operation ('agg_result_0') [127]  (0 ns)
+	'select' operation ('select_ln1494_2', /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/dma_demo_v_tpg_0_2_synth_1/dma_demo_v_tpg_0_2/prj/.autopilot/db/v_tpg.cpp:1494) [130]  (0.993 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

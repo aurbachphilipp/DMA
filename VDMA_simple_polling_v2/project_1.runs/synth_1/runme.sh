@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1'
+HD_PWD='/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

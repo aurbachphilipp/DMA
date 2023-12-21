@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/impl_1/dma_demo_wrapper.tcl"
+  variable script "/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/impl_1/dma_demo_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -130,17 +130,17 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.cache/wt [current_project]
-  set_property parent.project_path /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.xpr [current_project]
-  set_property ip_output_repo /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.cache/wt [current_project]
+  set_property parent.project_path /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.xpr [current_project]
+  set_property ip_output_repo /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/dma_demo_wrapper.dcp
+  add_files -quiet /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/synth_1/dma_demo_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.srcs/sources_1/bd/dma_demo/dma_demo.bd
+  add_files /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.srcs/sources_1/bd/dma_demo/dma_demo.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
 OPTRACE "read constraints: implementation" END { }

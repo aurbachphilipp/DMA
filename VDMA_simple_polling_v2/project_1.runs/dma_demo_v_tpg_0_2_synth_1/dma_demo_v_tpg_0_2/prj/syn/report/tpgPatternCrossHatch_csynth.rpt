@@ -1,0 +1,230 @@
+
+
+================================================================
+== Vitis HLS Report for 'tpgPatternCrossHatch'
+================================================================
+* Date:           Thu Dec 21 11:33:30 2023
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        dma_demo_v_tpg_0_2
+* Solution:       prj (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z010-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.73 ns|  4.907 ns|     1.82 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        4|        4|  26.936 ns|  26.936 ns|    1|    1|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------+------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                             |                  |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |           Instance          |      Module      |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +-----------------------------+------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_reg_ap_uint_10_s_fu_301  |reg_ap_uint_10_s  |        1|        1|  6.734 ns|  6.734 ns|    1|    1|      yes|
+        +-----------------------------+------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
++-----------------+---------+----+-------+-------+-----+
+|DSP              |        -|   -|      -|      -|    -|
+|Expression       |        -|   -|      0|    315|    -|
+|FIFO             |        -|   -|      -|      -|    -|
+|Instance         |        -|   -|     11|      9|    -|
+|Memory           |        0|   -|     16|      2|    -|
+|Multiplexer      |        -|   -|      -|    114|    -|
+|Register         |        -|   -|    235|     64|    -|
++-----------------+---------+----+-------+-------+-----+
+|Total            |        0|   0|    262|    504|    0|
++-----------------+---------+----+-------+-------+-----+
+|Available        |      120|  80|  35200|  17600|    0|
++-----------------+---------+----+-------+-------+-----+
+|Utilization (%)  |        0|   0|     ~0|      2|    0|
++-----------------+---------+----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------+------------------+---------+----+----+----+-----+
+    |           Instance          |      Module      | BRAM_18K| DSP| FF | LUT| URAM|
+    +-----------------------------+------------------+---------+----+----+----+-----+
+    |grp_reg_ap_uint_10_s_fu_301  |reg_ap_uint_10_s  |        0|   0|  11|   9|    0|
+    +-----------------------------+------------------+---------+----+----+----+-----+
+    |Total                        |                  |        0|   0|  11|   9|    0|
+    +-----------------------------+------------------+---------+----+----+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +------------+-------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |   Memory   |             Module            | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +------------+-------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |blkYuv_1_U  |tpgPatternCrossHatch_blkYuv_1  |        0|  8|   1|    0|     3|    8|     1|           24|
+    |whiYuv_1_U  |tpgPatternCrossHatch_whiYuv_1  |        0|  8|   1|    0|     3|    8|     1|           24|
+    +------------+-------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total       |                               |        0| 16|   2|    0|     6|   16|     2|           48|
+    +------------+-------------------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------------+----------+----+---+----+------------+------------+
+    |         Variable Name         | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------------+----------+----+---+----+------------+------------+
+    |add_ln1435_fu_212_p2           |         +|   0|  0|  17|          14|           4|
+    |add_ln1437_fu_307_p2           |         +|   0|  0|  17|          14|           4|
+    |add_ln1443_fu_260_p2           |         +|   0|  0|  24|          17|           2|
+    |add_ln691_2_fu_430_p2          |         +|   0|  0|  13|          10|           1|
+    |add_ln691_fu_371_p2            |         +|   0|  0|  13|          10|           1|
+    |grp_reg_ap_uint_10_s_fu_301_d  |         +|   0|  0|  13|          10|           2|
+    |ret_fu_330_p2                  |         +|   0|  0|  12|          11|           2|
+    |sub29_fu_272_p2                |         +|   0|  0|  24|          17|           2|
+    |sub_ln692_fu_417_p2            |         -|   0|  0|  13|          10|          10|
+    |and_ln1443_fu_312_p2           |       and|   0|  0|   2|           1|           1|
+    |and_ln1448_fu_361_p2           |       and|   0|  0|   2|           1|           1|
+    |ap_condition_249               |       and|   0|  0|   2|           1|           1|
+    |ap_condition_265               |       and|   0|  0|   2|           1|           1|
+    |ap_condition_280               |       and|   0|  0|   2|           1|           1|
+    |ap_condition_297               |       and|   0|  0|   2|           1|           1|
+    |cmp57_fu_278_p2                |      icmp|   0|  0|  11|           8|           1|
+    |cmp59_fu_284_p2                |      icmp|   0|  0|  11|           8|           1|
+    |icmp_ln1443_1_fu_254_p2        |      icmp|   0|  0|  13|          16|           1|
+    |icmp_ln1443_2_fu_266_p2        |      icmp|   0|  0|  13|          17|          17|
+    |icmp_ln1443_fu_240_p2          |      icmp|   0|  0|  13|          16|           1|
+    |icmp_ln1467_fu_290_p2          |      icmp|   0|  0|  13|          17|          17|
+    |icmp_ln870_1_fu_411_p2         |      icmp|   0|  0|  11|          10|          10|
+    |icmp_ln870_fu_356_p2           |      icmp|   0|  0|  11|          11|          11|
+    |icmp_ln878_fu_405_p2           |      icmp|   0|  0|  11|          10|          10|
+    |ap_condition_209               |        or|   0|  0|   2|           1|           1|
+    |ap_condition_224               |        or|   0|  0|   2|           1|           1|
+    |ap_condition_258               |        or|   0|  0|   2|           1|           1|
+    |ap_condition_270               |        or|   0|  0|   2|           1|           1|
+    |ap_condition_277               |        or|   0|  0|   2|           1|           1|
+    |ap_condition_305               |        or|   0|  0|   2|           1|           1|
+    |ap_condition_314               |        or|   0|  0|   2|           1|           1|
+    |or_ln1494_fu_474_p2            |        or|   0|  0|   2|           1|           1|
+    |or_ln1503_fu_450_p2            |        or|   0|  0|   2|           1|           1|
+    |conv_i10_fu_491_p3             |    select|   0|  0|   9|           1|           2|
+    |conv_i_fu_498_p3               |    select|   0|  0|   9|           1|           1|
+    |select_ln1494_1_fu_467_p3      |    select|   0|  0|   3|           1|           1|
+    |select_ln1494_2_fu_505_p3      |    select|   0|  0|   2|           1|           2|
+    |select_ln1494_fu_478_p3        |    select|   0|  0|   2|           1|           2|
+    |select_ln1503_1_fu_443_p3      |    select|   0|  0|   3|           1|           1|
+    |select_ln1503_fu_454_p3        |    select|   0|  0|   2|           1|           2|
+    |ap_enable_pp0                  |       xor|   0|  0|   2|           1|           2|
+    +-------------------------------+----------+----+---+----+------------+------------+
+    |Total                          |          |   0|  0| 315|         249|         125|
+    +-------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------------+----+-----------+-----+-----------+
+    |                    Name                   | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------------------+----+-----------+-----+-----------+
+    |ap_phi_mux_storemerge_phi_fu_143_p4        |  14|          3|   10|         30|
+    |ap_phi_reg_pp0_iter2_empty_reg_122         |   9|          2|    1|          2|
+    |ap_phi_reg_pp0_iter4_agg_result_0_reg_149  |  14|          3|    1|          3|
+    |ap_phi_reg_pp0_iter4_pix_val_V_1_reg_168   |  25|          5|    8|         40|
+    |ap_phi_reg_pp0_iter4_pix_val_V_2_reg_185   |  14|          3|    8|         24|
+    |empty_reg_122                              |  20|          4|    1|          4|
+    |xCount_V_2                                 |   9|          2|   10|         20|
+    |yCount_V_2                                 |   9|          2|   10|         20|
+    +-------------------------------------------+----+-----------+-----+-----------+
+    |Total                                      | 114|         24|   49|        143|
+    +-------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------+----+----+-----+-----------+
+    |                    Name                   | FF | LUT| Bits| Const Bits|
+    +-------------------------------------------+----+----+-----+-----------+
+    |and_ln1443_reg_580                         |   1|   0|    1|          0|
+    |ap_CS_fsm                                  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                    |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2                    |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3                    |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4                    |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter1_agg_result_0_reg_149  |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter1_empty_reg_122         |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter1_pix_val_V_1_reg_168   |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter1_pix_val_V_2_reg_185   |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter2_agg_result_0_reg_149  |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter2_empty_reg_122         |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter2_pix_val_V_1_reg_168   |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter2_pix_val_V_2_reg_185   |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter3_agg_result_0_reg_149  |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter3_pix_val_V_1_reg_168   |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter3_pix_val_V_2_reg_185   |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter4_agg_result_0_reg_149  |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter4_pix_val_V_1_reg_168   |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter4_pix_val_V_2_reg_185   |   8|   0|    8|          0|
+    |empty_reg_122                              |   1|   0|    1|          0|
+    |icmp_ln1443_1_reg_551                      |   1|   0|    1|          0|
+    |icmp_ln1443_2_reg_557                      |   1|   0|    1|          0|
+    |icmp_ln1443_reg_541                        |   1|   0|    1|          0|
+    |icmp_ln1443_reg_541_pp0_iter1_reg          |   1|   0|    1|          0|
+    |icmp_ln1467_reg_576                        |   1|   0|    1|          0|
+    |icmp_ln870_1_reg_596                       |   1|   0|    1|          0|
+    |icmp_ln878_reg_592                         |   1|   0|    1|          0|
+    |trunc_ln1443_reg_545                       |   1|   0|    1|          0|
+    |trunc_ln1443_reg_545_pp0_iter1_reg         |   1|   0|    1|          0|
+    |vHatch                                     |   1|   0|    1|          0|
+    |xCount_V_2                                 |  10|   0|   10|          0|
+    |yCount_V_2                                 |  10|   0|   10|          0|
+    |icmp_ln1443_1_reg_551                      |  64|  32|    1|          0|
+    |icmp_ln1467_reg_576                        |  64|  32|    1|          0|
+    +-------------------------------------------+----+----+-----+-----------+
+    |Total                                      | 235|  64|  109|          0|
+    +-------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------+-----+-----+------------+----------------------+--------------+
+|  RTL Ports  | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++-------------+-----+-----+------------+----------------------+--------------+
+|ap_clk       |   in|    1|  ap_ctrl_hs|  tpgPatternCrossHatch|  return value|
+|ap_rst       |   in|    1|  ap_ctrl_hs|  tpgPatternCrossHatch|  return value|
+|ap_start     |   in|    1|  ap_ctrl_hs|  tpgPatternCrossHatch|  return value|
+|ap_done      |  out|    1|  ap_ctrl_hs|  tpgPatternCrossHatch|  return value|
+|ap_idle      |  out|    1|  ap_ctrl_hs|  tpgPatternCrossHatch|  return value|
+|ap_ready     |  out|    1|  ap_ctrl_hs|  tpgPatternCrossHatch|  return value|
+|ap_ce        |   in|    1|  ap_ctrl_hs|  tpgPatternCrossHatch|  return value|
+|ap_return_0  |  out|    8|  ap_ctrl_hs|  tpgPatternCrossHatch|  return value|
+|ap_return_1  |  out|    8|  ap_ctrl_hs|  tpgPatternCrossHatch|  return value|
+|ap_return_2  |  out|    8|  ap_ctrl_hs|  tpgPatternCrossHatch|  return value|
+|y            |   in|   16|     ap_none|                     y|        scalar|
+|x            |   in|   16|     ap_none|                     x|        scalar|
+|width        |   in|   16|   ap_stable|                 width|        scalar|
+|height       |   in|   16|   ap_stable|                height|        scalar|
+|color        |   in|    8|   ap_stable|                 color|        scalar|
++-------------+-----+-----+------------+----------------------+--------------+
+

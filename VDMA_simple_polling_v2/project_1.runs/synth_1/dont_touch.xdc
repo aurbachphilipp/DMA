@@ -4,40 +4,55 @@
 # Block Designs: bd/dma_demo/dma_demo.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo || ORIG_REF_NAME==dma_demo} -quiet] -quiet
 
-# IP: bd/dma_demo/ip/dma_demo_processing_system7_0_0/dma_demo_processing_system7_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_processing_system7_0_0 || ORIG_REF_NAME==dma_demo_processing_system7_0_0} -quiet] -quiet
+# IP: bd/dma_demo/ip/dma_demo_processing_system7_0_1/dma_demo_processing_system7_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_processing_system7_0_1 || ORIG_REF_NAME==dma_demo_processing_system7_0_1} -quiet] -quiet
 
-# IP: bd/dma_demo/ip/dma_demo_axi_dma_0_0/dma_demo_axi_dma_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_axi_dma_0_0 || ORIG_REF_NAME==dma_demo_axi_dma_0_0} -quiet] -quiet
+# IP: bd/dma_demo/ip/dma_demo_proc_sys_reset_0_0/dma_demo_proc_sys_reset_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_proc_sys_reset_0_0 || ORIG_REF_NAME==dma_demo_proc_sys_reset_0_0} -quiet] -quiet
 
-# IP: bd/dma_demo/ip/dma_demo_ps7_0_axi_periph_0/dma_demo_ps7_0_axi_periph_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_ps7_0_axi_periph_0 || ORIG_REF_NAME==dma_demo_ps7_0_axi_periph_0} -quiet] -quiet
+# IP: bd/dma_demo/ip/dma_demo_clk_wiz_0_0/dma_demo_clk_wiz_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_clk_wiz_0_0 || ORIG_REF_NAME==dma_demo_clk_wiz_0_0} -quiet] -quiet
 
-# IP: bd/dma_demo/ip/dma_demo_rst_ps7_0_50M_0/dma_demo_rst_ps7_0_50M_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_rst_ps7_0_50M_0 || ORIG_REF_NAME==dma_demo_rst_ps7_0_50M_0} -quiet] -quiet
+# IP: bd/dma_demo/ip/dma_demo_axi_interconnect_0_1/dma_demo_axi_interconnect_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_axi_interconnect_0_1 || ORIG_REF_NAME==dma_demo_axi_interconnect_0_1} -quiet] -quiet
 
-# IP: bd/dma_demo/ip/dma_demo_xbar_0/dma_demo_xbar_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_xbar_0 || ORIG_REF_NAME==dma_demo_xbar_0} -quiet] -quiet
+# IP: bd/dma_demo/ip/dma_demo_v_tpg_0_2/dma_demo_v_tpg_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_v_tpg_0_2 || ORIG_REF_NAME==dma_demo_v_tpg_0_2} -quiet] -quiet
 
-# IP: bd/dma_demo/ip/dma_demo_axi_mem_intercon_0/dma_demo_axi_mem_intercon_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_axi_mem_intercon_0 || ORIG_REF_NAME==dma_demo_axi_mem_intercon_0} -quiet] -quiet
+# IP: bd/dma_demo/ip/dma_demo_v_axi4s_vid_out_0_0/dma_demo_v_axi4s_vid_out_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_v_axi4s_vid_out_0_0 || ORIG_REF_NAME==dma_demo_v_axi4s_vid_out_0_0} -quiet] -quiet
 
-# IP: bd/dma_demo/ip/dma_demo_axis_data_fifo_0_0/dma_demo_axis_data_fifo_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_axis_data_fifo_0_0 || ORIG_REF_NAME==dma_demo_axis_data_fifo_0_0} -quiet] -quiet
+# IP: bd/dma_demo/ip/dma_demo_v_tc_0_0/dma_demo_v_tc_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_v_tc_0_0 || ORIG_REF_NAME==dma_demo_v_tc_0_0} -quiet] -quiet
 
-# IP: bd/dma_demo/ip/dma_demo_xlconcat_0_0/dma_demo_xlconcat_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_xlconcat_0_0 || ORIG_REF_NAME==dma_demo_xlconcat_0_0} -quiet] -quiet
+# IP: bd/dma_demo/ip/dma_demo_xlconstant_0_0/dma_demo_xlconstant_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_xlconstant_0_0 || ORIG_REF_NAME==dma_demo_xlconstant_0_0} -quiet] -quiet
+
+# IP: bd/dma_demo/ip/dma_demo_xlslice_0_0/dma_demo_xlslice_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_xlslice_0_0 || ORIG_REF_NAME==dma_demo_xlslice_0_0} -quiet] -quiet
+
+# IP: bd/dma_demo/ip/dma_demo_xlslice_0_1/dma_demo_xlslice_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_xlslice_0_1 || ORIG_REF_NAME==dma_demo_xlslice_0_1} -quiet] -quiet
+
+# IP: bd/dma_demo/ip/dma_demo_xlslice_1_0/dma_demo_xlslice_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_xlslice_1_0 || ORIG_REF_NAME==dma_demo_xlslice_1_0} -quiet] -quiet
+
+# IP: bd/dma_demo/ip/dma_demo_xbar_3/dma_demo_xbar_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_xbar_3 || ORIG_REF_NAME==dma_demo_xbar_3} -quiet] -quiet
+
+# IP: bd/dma_demo/ip/dma_demo_axi_vdma_0_2/dma_demo_axi_vdma_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_axi_vdma_0_2 || ORIG_REF_NAME==dma_demo_axi_vdma_0_2} -quiet] -quiet
+
+# IP: bd/dma_demo/ip/dma_demo_xbar_2/dma_demo_xbar_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_xbar_2 || ORIG_REF_NAME==dma_demo_xbar_2} -quiet] -quiet
+
+# IP: bd/dma_demo/ip/dma_demo_axi_interconnect_1_1/dma_demo_axi_interconnect_1_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_axi_interconnect_1_1 || ORIG_REF_NAME==dma_demo_axi_interconnect_1_1} -quiet] -quiet
 
 # IP: bd/dma_demo/ip/dma_demo_auto_pc_0/dma_demo_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_auto_pc_0 || ORIG_REF_NAME==dma_demo_auto_pc_0} -quiet] -quiet
 
-# IP: bd/dma_demo/ip/dma_demo_auto_us_0/dma_demo_auto_us_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_auto_us_0 || ORIG_REF_NAME==dma_demo_auto_us_0} -quiet] -quiet
-
-# IP: bd/dma_demo/ip/dma_demo_auto_us_1/dma_demo_auto_us_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_auto_us_1 || ORIG_REF_NAME==dma_demo_auto_us_1} -quiet] -quiet
-
 # IP: bd/dma_demo/ip/dma_demo_auto_pc_1/dma_demo_auto_pc_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==dma_demo_auto_pc_1 || ORIG_REF_NAME==dma_demo_auto_pc_1} -quiet] -quiet
 
-# XDC: /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/dma_demo_ooc.xdc
+# XDC: /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/dma_demo_ooc.xdc

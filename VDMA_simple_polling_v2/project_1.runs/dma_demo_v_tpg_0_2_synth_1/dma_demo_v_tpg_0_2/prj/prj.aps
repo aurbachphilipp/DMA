@@ -1,0 +1,26 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <name>
+        <value string="prj"/>
+    </name>
+    <project>
+        <value string="dma_demo_v_tpg_0_2"/>
+    </project>
+    <flowTarget value="vivado"/>
+    <targetInfo>
+        <TargetInfo value="xc7z010:-clg400:-1"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/zynq/zynq" name="DefaultPlatform"/>
+    </libraryList>
+    <clockList>
+        <clock name="ap_clk" period="6.734" default="false"/>
+    </clockList>
+    <config>
+        <config_rtl module_prefix="dma_demo_v_tpg_0_2_"/>
+        <config_export format="ip_catalog" library="ip" vendor="xilinx.com" version="8.1"/>
+    </config>
+    <ExportDesign askAgain="true" evaluate="false" rtl="verilog" formatName="ip_catalog">
+        <Format formatName="ip_catalog" description="" vendor="xilinx.com" library="ip" ipname="v_tpg" version="8.1" display_name="" taxonomy=""/>
+    </ExportDesign>
+</AutoPilot:solution>
+

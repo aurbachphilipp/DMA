@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.runs/synth_1/dma_demo_wrapper.tcl"
+  variable script "/home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.runs/synth_1/dma_demo_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -77,36 +78,39 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.cache/wt [current_project]
-set_property parent.project_path /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.xpr [current_project]
+set_property webtalk.parent_dir /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.cache/wt [current_project]
+set_property parent.project_path /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:cora-z7-10:part0:1.0 [current_project]
-set_property ip_output_repo /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.cache/ip [current_project]
+set_property ip_output_repo /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/hdl/dma_demo_wrapper.vhd
-add_files /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.srcs/sources_1/bd/dma_demo/dma_demo.bd
-set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_processing_system7_0_0/dma_demo_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_axi_dma_0_0/dma_demo_axi_dma_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_axi_dma_0_0/dma_demo_axi_dma_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_axi_dma_0_0/dma_demo_axi_dma_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_rst_ps7_0_50M_0/dma_demo_rst_ps7_0_50M_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_rst_ps7_0_50M_0/dma_demo_rst_ps7_0_50M_0.xdc]
-set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_rst_ps7_0_50M_0/dma_demo_rst_ps7_0_50M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_xbar_0/dma_demo_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_axis_data_fifo_0_0/dma_demo_axis_data_fifo_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_auto_pc_0/dma_demo_auto_pc_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_auto_us_0/dma_demo_auto_us_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_auto_us_0/dma_demo_auto_us_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_auto_us_0/dma_demo_auto_us_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_auto_us_1/dma_demo_auto_us_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_auto_us_1/dma_demo_auto_us_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_auto_us_1/dma_demo_auto_us_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_auto_pc_1/dma_demo_auto_pc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/DMA_demo_no_SG/project_1/project_1.gen/sources_1/bd/dma_demo/dma_demo_ooc.xdc]
+read_vhdl -library xil_defaultlib /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/hdl/dma_demo_wrapper.vhd
+add_files /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.srcs/sources_1/bd/dma_demo/dma_demo.bd
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_processing_system7_0_1/dma_demo_processing_system7_0_1.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_proc_sys_reset_0_0/dma_demo_proc_sys_reset_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_proc_sys_reset_0_0/dma_demo_proc_sys_reset_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_proc_sys_reset_0_0/dma_demo_proc_sys_reset_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_clk_wiz_0_0/dma_demo_clk_wiz_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_clk_wiz_0_0/dma_demo_clk_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_clk_wiz_0_0/dma_demo_clk_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_v_tpg_0_2/dma_demo_v_tpg_0_2.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_v_tpg_0_2/dma_demo_v_tpg_0_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_v_axi4s_vid_out_0_0/dma_demo_v_axi4s_vid_out_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_v_axi4s_vid_out_0_0/dma_demo_v_axi4s_vid_out_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_v_tc_0_0/dma_demo_v_tc_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_v_tc_0_0/dma_demo_v_tc_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_xbar_3/dma_demo_xbar_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_axi_vdma_0_2/dma_demo_axi_vdma_0_2.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_axi_vdma_0_2/dma_demo_axi_vdma_0_2_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_axi_vdma_0_2/dma_demo_axi_vdma_0_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_xbar_2/dma_demo_xbar_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_auto_pc_0/dma_demo_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/ip/dma_demo_auto_pc_1/dma_demo_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/rom41797/Documents/Project/VDMA_simple_polling_v2/project_1.gen/sources_1/bd/dma_demo/dma_demo_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

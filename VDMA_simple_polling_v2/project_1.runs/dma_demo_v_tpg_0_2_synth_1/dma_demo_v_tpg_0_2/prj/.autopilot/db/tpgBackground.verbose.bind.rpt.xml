@@ -1,0 +1,52 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'tpgBackground'" level="0">
+<item name = "Date">Thu Dec 21 11:33:27 2023
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
+<item name = "Project">dma_demo_v_tpg_0_2</item>
+<item name = "Solution">prj (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z010-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">6.73 ns, 4.995 ns, 1.82 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_tpgPatternDPColorSquare_fu_1154">tpgPatternDPColorSquare, 5, 5, 33.670 ns, 33.670 ns, 1, 1, yes</column>
+<column name="grp_tpgPatternCrossHatch_fu_1199">tpgPatternCrossHatch, 4, 4, 26.936 ns, 26.936 ns, 1, 1, yes</column>
+<column name="grp_reg_int_s_fu_2329">reg_int_s, 1, 1, 6.734 ns, 6.734 ns, 1, 1, yes</column>
+<column name="grp_reg_unsigned_short_s_fu_2548">reg_unsigned_short_s, 1, 1, 6.734 ns, 6.734 ns, 1, 1, yes</column>
+<column name="grp_reg_int_s_fu_2867">reg_int_s, 1, 1, 6.734 ns, 6.734 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_525_1">?, ?, ?, -, -, ?, no</column>
+<column name=" + VITIS_LOOP_527_2">?, ?, 18, 1, 1, ?, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

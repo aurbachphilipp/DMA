@@ -1,0 +1,3238 @@
+<profile>
+    <ReportVersion>
+        <Version>2020.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z010-clg400-1</Part>
+        <TopModelName>v_tpg</TopModelName>
+        <TargetClockPeriod>6.73</TargetClockPeriod>
+        <ClockUncertainty>1.82</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>dataflow</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>6.649</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>undef</Best-caseLatency>
+            <Average-caseLatency>undef</Average-caseLatency>
+            <Worst-caseLatency>undef</Worst-caseLatency>
+            <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+            <DataflowPipelineThroughput>undef</DataflowPipelineThroughput>
+            <Interval-min>undef</Interval-min>
+            <Interval-max>undef</Interval-max>
+        </SummaryOfOverallLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>5</BRAM_18K>
+            <DSP>9</DSP>
+            <FF>6170</FF>
+            <LUT>7050</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>120</BRAM_18K>
+            <DSP>80</DSP>
+            <FF>35200</FF>
+            <LUT>17600</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>s_axi_CTRL_AWVALID</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_AWREADY</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_AWADDR</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WVALID</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WREADY</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WDATA</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WSTRB</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_ARVALID</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_ARREADY</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_ARADDR</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RVALID</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RREADY</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RDATA</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RRESP</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BVALID</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BREADY</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BRESP</name>
+            <Object>CTRL</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>v_tpg</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>v_tpg</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>interrupt</name>
+            <Object>v_tpg</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>fid_in</name>
+            <Object>fid_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_stable</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>bool</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_video_TDATA</name>
+            <Object>m_axis_video_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>24</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_video_TKEEP</name>
+            <Object>m_axis_video_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_video_TSTRB</name>
+            <Object>m_axis_video_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_video_TUSER</name>
+            <Object>m_axis_video_V_user_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_video_TLAST</name>
+            <Object>m_axis_video_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_video_TID</name>
+            <Object>m_axis_video_V_id_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_video_TDEST</name>
+            <Object>m_axis_video_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_video_TVALID</name>
+            <Object>m_axis_video_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_video_TREADY</name>
+            <Object>m_axis_video_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>fid</name>
+            <Object>fid</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>bool</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>fid_ap_vld</name>
+            <Object>fid</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>bool</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule>
+            <ModuleName>v_tpg</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>tpgBackground_U0</InstName>
+                    <ModuleName>tpgBackground</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>290</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>grp_tpgPatternDPColorSquare_fu_1154</InstName>
+                            <ModuleName>tpgPatternDPColorSquare</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>1154</ID>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_tpgPatternCrossHatch_fu_1199</InstName>
+                            <ModuleName>tpgPatternCrossHatch</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>1199</ID>
+                            <InstancesList>
+                                <Instance>
+                                    <InstName>grp_reg_ap_uint_10_s_fu_301</InstName>
+                                    <ModuleName>reg_ap_uint_10_s</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>301</ID>
+                                </Instance>
+                            </InstancesList>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_reg_int_s_fu_2329</InstName>
+                            <ModuleName>reg_int_s</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>2329</ID>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_reg_unsigned_short_s_fu_2548</InstName>
+                            <ModuleName>reg_unsigned_short_s</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>2548</ID>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_reg_int_s_fu_2867</InstName>
+                            <ModuleName>reg_int_s</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>2867</ID>
+                        </Instance>
+                    </InstancesList>
+                </Instance>
+                <Instance>
+                    <InstName>tpgForeground_U0</InstName>
+                    <ModuleName>tpgForeground</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>439</ID>
+                </Instance>
+                <Instance>
+                    <InstName>MultiPixStream2AXIvideo_U0</InstName>
+                    <ModuleName>MultiPixStream2AXIvideo</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>479</ID>
+                </Instance>
+            </InstancesList>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>tpgPatternDPColorSquare</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>6.73</TargetClockPeriod>
+                    <ClockUncertainty>1.82</ClockUncertainty>
+                    <TargetInitiationInterval>1</TargetInitiationInterval>
+                    <EstimatedClockPeriod>4.818</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>5</Best-caseLatency>
+                    <Average-caseLatency>5</Average-caseLatency>
+                    <Worst-caseLatency>5</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>33.670 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>33.670 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>33.670 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>6</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <FF>231</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>466</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>ap_clk</name>
+                    <Object>tpgPatternDPColorSquare</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_rst</name>
+                    <Object>tpgPatternDPColorSquare</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_start</name>
+                    <Object>tpgPatternDPColorSquare</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_done</name>
+                    <Object>tpgPatternDPColorSquare</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_idle</name>
+                    <Object>tpgPatternDPColorSquare</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_ready</name>
+                    <Object>tpgPatternDPColorSquare</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_ce</name>
+                    <Object>tpgPatternDPColorSquare</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_return_0</name>
+                    <Object>tpgPatternDPColorSquare</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_return_1</name>
+                    <Object>tpgPatternDPColorSquare</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_return_2</name>
+                    <Object>tpgPatternDPColorSquare</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>y</name>
+                    <Object>y</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>x</name>
+                    <Object>x</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>color</name>
+                    <Object>color</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_stable</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>dpDynamicRange</name>
+                    <Object>dpDynamicRange</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_stable</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>dpYUVCoef</name>
+                    <Object>dpYUVCoef</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_stable</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+        <Module>
+            <Name>reg_ap_uint_10_s</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>6.73</TargetClockPeriod>
+                    <ClockUncertainty>1.82</ClockUncertainty>
+                    <TargetInitiationInterval>1</TargetInitiationInterval>
+                    <EstimatedClockPeriod>0.000</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1</Best-caseLatency>
+                    <Average-caseLatency>1</Average-caseLatency>
+                    <Worst-caseLatency>1</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>6.734 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>6.734 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>6.734 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>2</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>11</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>9</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>ap_clk</name>
+                    <Object>reg&lt;ap_uint&lt;10&gt; &gt;</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_rst</name>
+                    <Object>reg&lt;ap_uint&lt;10&gt; &gt;</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_return</name>
+                    <Object>reg&lt;ap_uint&lt;10&gt; &gt;</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>10</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_ce</name>
+                    <Object>reg&lt;ap_uint&lt;10&gt; &gt;</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>d</name>
+                    <Object>d</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_stable</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>10</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+        <Module>
+            <Name>tpgPatternCrossHatch</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>6.73</TargetClockPeriod>
+                    <ClockUncertainty>1.82</ClockUncertainty>
+                    <TargetInitiationInterval>1</TargetInitiationInterval>
+                    <EstimatedClockPeriod>4.907</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>4</Best-caseLatency>
+                    <Average-caseLatency>4</Average-caseLatency>
+                    <Worst-caseLatency>4</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>26.936 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>26.936 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>26.936 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>5</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <FF>262</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>504</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>ap_clk</name>
+                    <Object>tpgPatternCrossHatch</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_rst</name>
+                    <Object>tpgPatternCrossHatch</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_start</name>
+                    <Object>tpgPatternCrossHatch</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_done</name>
+                    <Object>tpgPatternCrossHatch</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_idle</name>
+                    <Object>tpgPatternCrossHatch</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_ready</name>
+                    <Object>tpgPatternCrossHatch</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_ce</name>
+                    <Object>tpgPatternCrossHatch</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_return_0</name>
+                    <Object>tpgPatternCrossHatch</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_return_1</name>
+                    <Object>tpgPatternCrossHatch</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_return_2</name>
+                    <Object>tpgPatternCrossHatch</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>y</name>
+                    <Object>y</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>x</name>
+                    <Object>x</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>width</name>
+                    <Object>width</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_stable</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>height</name>
+                    <Object>height</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_stable</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>color</name>
+                    <Object>color</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_stable</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+        <Module>
+            <Name>reg_int_s</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>6.73</TargetClockPeriod>
+                    <ClockUncertainty>1.82</ClockUncertainty>
+                    <TargetInitiationInterval>1</TargetInitiationInterval>
+                    <EstimatedClockPeriod>0.000</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1</Best-caseLatency>
+                    <Average-caseLatency>1</Average-caseLatency>
+                    <Worst-caseLatency>1</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>6.734 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>6.734 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>6.734 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>2</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>65</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>9</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>ap_clk</name>
+                    <Object>reg&lt;int&gt;</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_rst</name>
+                    <Object>reg&lt;int&gt;</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_return</name>
+                    <Object>reg&lt;int&gt;</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_ce</name>
+                    <Object>reg&lt;int&gt;</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>d</name>
+                    <Object>d</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+        <Module>
+            <Name>reg_unsigned_short_s</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>6.73</TargetClockPeriod>
+                    <ClockUncertainty>1.82</ClockUncertainty>
+                    <TargetInitiationInterval>1</TargetInitiationInterval>
+                    <EstimatedClockPeriod>0.000</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1</Best-caseLatency>
+                    <Average-caseLatency>1</Average-caseLatency>
+                    <Worst-caseLatency>1</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>6.734 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>6.734 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>6.734 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>2</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>17</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>9</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>ap_clk</name>
+                    <Object>reg&lt;unsigned short&gt;</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_rst</name>
+                    <Object>reg&lt;unsigned short&gt;</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_return</name>
+                    <Object>reg&lt;unsigned short&gt;</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_ce</name>
+                    <Object>reg&lt;unsigned short&gt;</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>d</name>
+                    <Object>d</Object>
+                    <Type>scalar</Type>
+                    <Scope/>
+                    <IOProtocol>ap_stable</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+        <Module>
+            <Name>tpgBackground</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>6.73</TargetClockPeriod>
+                    <ClockUncertainty>1.82</ClockUncertainty>
+                    <EstimatedClockPeriod>4.995</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
+                    <PipelineType>none</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_525_1>
+                        <Name>VITIS_LOOP_525_1</Name>
+                        <TripCount>undef</TripCount>
+                        <Latency>undef</Latency>
+                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                        <IterationLatency>undef</IterationLatency>
+                        <PipelineDepth>undef</PipelineDepth>
+                        <VITIS_LOOP_527_2>
+                            <Name>VITIS_LOOP_527_2</Name>
+                            <TripCount>undef</TripCount>
+                            <Latency>undef</Latency>
+                            <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                            <PipelineII>1</PipelineII>
+                            <PipelineDepth>18</PipelineDepth>
+                        </VITIS_LOOP_527_2>
+                    </VITIS_LOOP_525_1>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>5</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>4</UTIL_BRAM>
+                    <DSP>9</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>11</UTIL_DSP>
+                    <FF>5187</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>14</UTIL_FF>
+                    <LUT>5095</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>28</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>ap_clk</name>
+                    <Object>tpgBackground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_rst</name>
+                    <Object>tpgBackground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_start</name>
+                    <Object>tpgBackground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>start_full_n</name>
+                    <Object>tpgBackground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_done</name>
+                    <Object>tpgBackground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_continue</name>
+                    <Object>tpgBackground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_idle</name>
+                    <Object>tpgBackground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_ready</name>
+                    <Object>tpgBackground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>start_out</name>
+                    <Object>tpgBackground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>start_write</name>
+                    <Object>tpgBackground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>height</name>
+                    <Object>height</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>width</name>
+                    <Object>width</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>bck_motion_en</name>
+                    <Object>bck_motion_en</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>patternId</name>
+                    <Object>patternId</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ZplateHorContStart</name>
+                    <Object>ZplateHorContStart</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ZplateHorContDelta</name>
+                    <Object>ZplateHorContDelta</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ZplateVerContStart</name>
+                    <Object>ZplateVerContStart</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ZplateVerContDelta</name>
+                    <Object>ZplateVerContDelta</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>dpDynamicRange</name>
+                    <Object>dpDynamicRange</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>dpYUVCoef</name>
+                    <Object>dpYUVCoef</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>motionSpeed</name>
+                    <Object>motionSpeed</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>colorFormat</name>
+                    <Object>colorFormat</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>outImg_din</name>
+                    <Object>outImg</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_fifo</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>24</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>outImg_full_n</name>
+                    <Object>outImg</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_fifo</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>outImg_write</name>
+                    <Object>outImg</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_fifo</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+        <Module>
+            <Name>tpgForeground</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>6.73</TargetClockPeriod>
+                    <ClockUncertainty>1.82</ClockUncertainty>
+                    <EstimatedClockPeriod>6.649</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
+                    <PipelineType>none</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_744_1>
+                        <Name>VITIS_LOOP_744_1</Name>
+                        <TripCount>undef</TripCount>
+                        <Latency>undef</Latency>
+                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                        <IterationLatency>undef</IterationLatency>
+                        <PipelineDepth>undef</PipelineDepth>
+                        <VITIS_LOOP_746_2>
+                            <Name>VITIS_LOOP_746_2</Name>
+                            <TripCount>undef</TripCount>
+                            <Latency>undef</Latency>
+                            <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                            <PipelineII>1</PipelineII>
+                            <PipelineDepth>3</PipelineDepth>
+                        </VITIS_LOOP_746_2>
+                    </VITIS_LOOP_744_1>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <FF>271</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>875</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>4</UTIL_LUT>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>ap_clk</name>
+                    <Object>tpgForeground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_rst</name>
+                    <Object>tpgForeground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_start</name>
+                    <Object>tpgForeground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>start_full_n</name>
+                    <Object>tpgForeground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_done</name>
+                    <Object>tpgForeground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_continue</name>
+                    <Object>tpgForeground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_idle</name>
+                    <Object>tpgForeground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_ready</name>
+                    <Object>tpgForeground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>start_out</name>
+                    <Object>tpgForeground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>start_write</name>
+                    <Object>tpgForeground</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>srcImg_dout</name>
+                    <Object>srcImg</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_fifo</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>24</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>srcImg_empty_n</name>
+                    <Object>srcImg</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_fifo</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>srcImg_read</name>
+                    <Object>srcImg</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_fifo</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>height</name>
+                    <Object>height</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>width</name>
+                    <Object>width</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>patternId</name>
+                    <Object>patternId</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>maskId</name>
+                    <Object>maskId</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>colorFormat</name>
+                    <Object>colorFormat</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>crossHairX</name>
+                    <Object>crossHairX</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>crossHairY</name>
+                    <Object>crossHairY</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>boxSize</name>
+                    <Object>boxSize</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>boxColorR</name>
+                    <Object>boxColorR</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>boxColorG</name>
+                    <Object>boxColorG</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>boxColorB</name>
+                    <Object>boxColorB</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>motionSpeed</name>
+                    <Object>motionSpeed</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>outImg_din</name>
+                    <Object>outImg</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_fifo</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>24</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>outImg_full_n</name>
+                    <Object>outImg</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_fifo</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>outImg_write</name>
+                    <Object>outImg</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_fifo</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+        <Module>
+            <Name>MultiPixStream2AXIvideo</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>6.73</TargetClockPeriod>
+                    <ClockUncertainty>1.82</ClockUncertainty>
+                    <EstimatedClockPeriod>3.706</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>232321</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>6.734 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>1.564 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1 ~ 232321</PipelineInitiationInterval>
+                    <PipelineType>none</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_957_1>
+                        <Name>VITIS_LOOP_957_1</Name>
+                        <TripCount>
+                            <range>
+                                <min>0</min>
+                                <max>480</max>
+                            </range>
+                        </TripCount>
+                        <Latency>0 ~ 232320</Latency>
+                        <AbsoluteTimeLatency>0 ns ~ 1.564 ms</AbsoluteTimeLatency>
+                        <IterationLatency>
+                            <range>
+                                <min>2</min>
+                                <max>484</max>
+                            </range>
+                        </IterationLatency>
+                        <PipelineDepth>2 ~ 484</PipelineDepth>
+                        <VITIS_LOOP_962_2>
+                            <Name>VITIS_LOOP_962_2</Name>
+                            <TripCount>
+                                <range>
+                                    <min>1</min>
+                                    <max>480</max>
+                                </range>
+                            </TripCount>
+                            <Latency>2 ~ 481</Latency>
+                            <AbsoluteTimeLatency>13.468 ns ~ 3.239 us</AbsoluteTimeLatency>
+                            <PipelineII>1</PipelineII>
+                            <PipelineDepth>3</PipelineDepth>
+                        </VITIS_LOOP_962_2>
+                    </VITIS_LOOP_957_1>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>72</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>342</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>ap_clk</name>
+                    <Object>MultiPixStream2AXIvideo</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_rst</name>
+                    <Object>MultiPixStream2AXIvideo</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_start</name>
+                    <Object>MultiPixStream2AXIvideo</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_done</name>
+                    <Object>MultiPixStream2AXIvideo</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_continue</name>
+                    <Object>MultiPixStream2AXIvideo</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_idle</name>
+                    <Object>MultiPixStream2AXIvideo</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_ready</name>
+                    <Object>MultiPixStream2AXIvideo</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ovrlayYUV_dout</name>
+                    <Object>ovrlayYUV</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_fifo</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>24</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ovrlayYUV_empty_n</name>
+                    <Object>ovrlayYUV</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_fifo</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ovrlayYUV_read</name>
+                    <Object>ovrlayYUV</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_fifo</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>height</name>
+                    <Object>height</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>width</name>
+                    <Object>width</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>colorFormat</name>
+                    <Object>colorFormat</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>fid_in</name>
+                    <Object>fid_in</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_stable</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>fid</name>
+                    <Object>fid</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_vld</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>fid_ap_vld</name>
+                    <Object>fid</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_vld</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>field_id</name>
+                    <Object>field_id</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>16</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axis_video_TDATA</name>
+                    <Object>AXI_video_strm_V_data_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>24</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axis_video_TVALID</name>
+                    <Object>AXI_video_strm_V_dest_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axis_video_TREADY</name>
+                    <Object>AXI_video_strm_V_dest_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axis_video_TDEST</name>
+                    <Object>AXI_video_strm_V_dest_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axis_video_TKEEP</name>
+                    <Object>AXI_video_strm_V_keep_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>3</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axis_video_TSTRB</name>
+                    <Object>AXI_video_strm_V_strb_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>3</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axis_video_TUSER</name>
+                    <Object>AXI_video_strm_V_user_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axis_video_TLAST</name>
+                    <Object>AXI_video_strm_V_last_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axis_video_TID</name>
+                    <Object>AXI_video_strm_V_id_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+        <Module>
+            <Name>v_tpg</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>6.73</TargetClockPeriod>
+                    <ClockUncertainty>1.82</ClockUncertainty>
+                    <EstimatedClockPeriod>6.649</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <DataflowPipelineThroughput>undef</DataflowPipelineThroughput>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
+                    <PipelineType>dataflow</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>5</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>4</UTIL_BRAM>
+                    <DSP>9</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>11</UTIL_DSP>
+                    <FF>6170</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>17</UTIL_FF>
+                    <LUT>7050</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>40</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>s_axi_CTRL_AWVALID</name>
+                    <Object>CTRL</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CTRL_AWREADY</name>
+                    <Object>CTRL</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CTRL_AWADDR</name>
+                    <Object>CTRL</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CTRL_WVALID</name>
+                    <Object>CTRL</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CTRL_WREADY</name>
+                    <Object>CTRL</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CTRL_WDATA</name>
+                    <Object>CTRL</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CTRL_WSTRB</name>
+                    <Object>CTRL</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CTRL_ARVALID</name>
+                    <Object>CTRL</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CTRL_ARREADY</name>
+                    <Object>CTRL</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CTRL_ARADDR</name>
+                    <Object>CTRL</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CTRL_RVALID</name>
+                    <Object>CTRL</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CTRL_RREADY</name>
+                    <Object>CTRL</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CTRL_RDATA</name>
+                    <Object>CTRL</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CTRL_RRESP</name>
+                    <Object>CTRL</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CTRL_BVALID</name>
+                    <Object>CTRL</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CTRL_BREADY</name>
+                    <Object>CTRL</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CTRL_BRESP</name>
+                    <Object>CTRL</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_clk</name>
+                    <Object>v_tpg</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_rst_n</name>
+                    <Object>v_tpg</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>interrupt</name>
+                    <Object>v_tpg</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>fid_in</name>
+                    <Object>fid_in</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_stable</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>bool</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axis_video_TDATA</name>
+                    <Object>m_axis_video_V_data_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>24</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axis_video_TKEEP</name>
+                    <Object>m_axis_video_V_keep_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>3</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axis_video_TSTRB</name>
+                    <Object>m_axis_video_V_strb_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>3</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axis_video_TUSER</name>
+                    <Object>m_axis_video_V_user_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axis_video_TLAST</name>
+                    <Object>m_axis_video_V_last_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axis_video_TID</name>
+                    <Object>m_axis_video_V_id_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axis_video_TDEST</name>
+                    <Object>m_axis_video_V_dest_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axis_video_TVALID</name>
+                    <Object>m_axis_video_V_dest_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axis_video_TREADY</name>
+                    <Object>m_axis_video_V_dest_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>fid</name>
+                    <Object>fid</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_vld</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>bool</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>fid_ap_vld</name>
+                    <Object>fid</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_vld</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>bool</CType>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation>
+        <FIFOInst>
+            <Name>bckgndYUV_U</Name>
+            <ParentInst/>
+            <StaticDepth>16</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>ovrlayYUV_U</Name>
+            <ParentInst/>
+            <StaticDepth>16</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+    </FIFOInformation>
+    <Args>
+        <Arg ArgName="height" index="0" direction="in" srcType="unsigned short&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="height" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="width" index="1" direction="in" srcType="unsigned short&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="width" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="field_id" index="2" direction="in" srcType="unsigned short&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="field_id" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="fid_in" index="3" direction="in" srcType="bool&amp;" srcSize="1">
+            <hwRefs>
+                <hwRef type="port" interface="fid_in" name="fid_in" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="bckgndId" index="4" direction="in" srcType="unsigned char&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="bckgndId" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="ovrlayId" index="5" direction="in" srcType="unsigned char&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="ovrlayId" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="maskId" index="6" direction="in" srcType="unsigned char&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="maskId" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="motionSpeed" index="7" direction="in" srcType="unsigned char&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="motionSpeed" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="colorFormat" index="8" direction="in" srcType="unsigned char&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="colorFormat" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="crossHairX" index="9" direction="in" srcType="unsigned short&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="crossHairX" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="crossHairY" index="10" direction="in" srcType="unsigned short&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="crossHairY" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="ZplateHorContStart" index="11" direction="in" srcType="unsigned short&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="ZplateHorContStart" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="ZplateHorContDelta" index="12" direction="in" srcType="unsigned short&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="ZplateHorContDelta" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="ZplateVerContStart" index="13" direction="in" srcType="unsigned short&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="ZplateVerContStart" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="ZplateVerContDelta" index="14" direction="in" srcType="unsigned short&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="ZplateVerContDelta" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="boxSize" index="15" direction="in" srcType="unsigned short&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="boxSize" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="boxColorR" index="16" direction="in" srcType="unsigned short&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="boxColorR" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="boxColorG" index="17" direction="in" srcType="unsigned short&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="boxColorG" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="boxColorB" index="18" direction="in" srcType="unsigned short&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="boxColorB" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="dpDynamicRange" index="19" direction="in" srcType="unsigned char&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="dpDynamicRange" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="dpYUVCoef" index="20" direction="in" srcType="unsigned char&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="dpYUVCoef" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="bck_motion_en" index="21" direction="in" srcType="unsigned short&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="bck_motion_en" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="m_axis_video" index="22" direction="out" srcType="stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1, 1, 1&gt;, 0&gt;&amp;" srcSize="96">
+            <hwRefs>
+                <hwRef type="interface" interface="m_axis_video" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="fid" index="23" direction="out" srcType="bool&amp;" srcSize="1">
+            <hwRefs>
+                <hwRef type="port" interface="fid" name="fid" usage="data" direction="out"/>
+                <hwRef type="port" interface="fid_ap_vld" name="fid_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_CTRL:m_axis_video</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="fid" type="data" busTypeName="data" mode="master" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="fid">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>fid</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_stable" register_option="0" argName="fid"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="fid_in" type="data" busTypeName="data" mode="slave" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="fid_in">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>fid_in</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_stable" register_option="0" argName="fid_in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="interrupt" type="interrupt" busTypeName="interrupt" mode="master" dataWidth="1">
+            <busParams>
+                <busParam busParamName="SENSITIVITY">LEVEL_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="interrupt">INTERRUPT</portMap>
+            </portMaps>
+            <ports>
+                <port>interrupt</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="m_axis_video" type="axi4stream" busTypeName="axis" mode="master" dataWidth="24" portPrefix="m_axis_video_">
+            <ports>
+                <port>m_axis_video_TDATA</port>
+                <port>m_axis_video_TDEST</port>
+                <port>m_axis_video_TID</port>
+                <port>m_axis_video_TKEEP</port>
+                <port>m_axis_video_TLAST</port>
+                <port>m_axis_video_TREADY</port>
+                <port>m_axis_video_TSTRB</port>
+                <port>m_axis_video_TUSER</port>
+                <port>m_axis_video_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="m_axis_video"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="s_axi_CTRL" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="8" portPrefix="s_axi_CTRL_" paramPrefix="C_S_AXI_CTRL_">
+            <ports>
+                <port>s_axi_CTRL_ARADDR</port>
+                <port>s_axi_CTRL_ARREADY</port>
+                <port>s_axi_CTRL_ARVALID</port>
+                <port>s_axi_CTRL_AWADDR</port>
+                <port>s_axi_CTRL_AWREADY</port>
+                <port>s_axi_CTRL_AWVALID</port>
+                <port>s_axi_CTRL_BREADY</port>
+                <port>s_axi_CTRL_BRESP</port>
+                <port>s_axi_CTRL_BVALID</port>
+                <port>s_axi_CTRL_RDATA</port>
+                <port>s_axi_CTRL_RREADY</port>
+                <port>s_axi_CTRL_RRESP</port>
+                <port>s_axi_CTRL_RVALID</port>
+                <port>s_axi_CTRL_WDATA</port>
+                <port>s_axi_CTRL_WREADY</port>
+                <port>s_axi_CTRL_WSTRB</port>
+                <port>s_axi_CTRL_WVALID</port>
+            </ports>
+            <registers>
+                <register offset="0x00" name="CTRL" access="RW" resetValue="0x0" description="Control signals" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="AP_START" access="RW" resetValue="0" description="Control signal Register for 'ap_start'."/>
+                        <field offset="1" width="1" name="AP_DONE" access="R" resetValue="0" description="Control signal Register for 'ap_done'."/>
+                        <field offset="2" width="1" name="AP_IDLE" access="R" resetValue="0" description="Control signal Register for 'ap_idle'."/>
+                        <field offset="3" width="1" name="AP_READY" access="R" resetValue="0" description="Control signal Register for 'ap_ready'."/>
+                        <field offset="4" width="3" name="RESERVED_1" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                        <field offset="7" width="1" name="AUTO_RESTART" access="RW" resetValue="0" description="Control signal Register for 'auto_restart'."/>
+                        <field offset="8" width="24" name="RESERVED_2" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x04" name="GIER" access="RW" resetValue="0x0" description="Global Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="Enable" access="RW" resetValue="0" description="Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x08" name="IP_IER" access="RW" resetValue="0x0" description="IP Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_EN" access="RW" resetValue="0" description="Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="1" width="1" name="CHAN1_INT_EN" access="RW" resetValue="0" description="Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="2" width="30" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x0c" name="IP_ISR" access="RW" resetValue="0x0" description="IP Interrupt Status Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_ST" access="RTOW" resetValue="0" description="Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 input interrupt, 1 = Channel 0 input interrup"/>
+                        <field offset="1" width="1" name="CHAN1_INT_ST" access="RTOW" resetValue="0" description="Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 input interrupt, 1 = Channel 1 input interrup"/>
+                        <field offset="2" width="30" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x10" name="height" access="W" resetValue="0x0" description="Data signal of height" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="height" access="W" resetValue="0" description="Bit 15 to 0 of height"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x18" name="width" access="W" resetValue="0x0" description="Data signal of width" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="width" access="W" resetValue="0" description="Bit 15 to 0 of width"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x20" name="bckgndId" access="W" resetValue="0x0" description="Data signal of bckgndId" range="32">
+                    <fields>
+                        <field offset="0" width="8" name="bckgndId" access="W" resetValue="0" description="Bit 7 to 0 of bckgndId"/>
+                        <field offset="8" width="24" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x28" name="ovrlayId" access="W" resetValue="0x0" description="Data signal of ovrlayId" range="32">
+                    <fields>
+                        <field offset="0" width="8" name="ovrlayId" access="W" resetValue="0" description="Bit 7 to 0 of ovrlayId"/>
+                        <field offset="8" width="24" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x30" name="maskId" access="W" resetValue="0x0" description="Data signal of maskId" range="32">
+                    <fields>
+                        <field offset="0" width="8" name="maskId" access="W" resetValue="0" description="Bit 7 to 0 of maskId"/>
+                        <field offset="8" width="24" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x38" name="motionSpeed" access="W" resetValue="0x0" description="Data signal of motionSpeed" range="32">
+                    <fields>
+                        <field offset="0" width="8" name="motionSpeed" access="W" resetValue="0" description="Bit 7 to 0 of motionSpeed"/>
+                        <field offset="8" width="24" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x40" name="colorFormat" access="W" resetValue="0x0" description="Data signal of colorFormat" range="32">
+                    <fields>
+                        <field offset="0" width="8" name="colorFormat" access="W" resetValue="0" description="Bit 7 to 0 of colorFormat"/>
+                        <field offset="8" width="24" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x48" name="crossHairX" access="W" resetValue="0x0" description="Data signal of crossHairX" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="crossHairX" access="W" resetValue="0" description="Bit 15 to 0 of crossHairX"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x50" name="crossHairY" access="W" resetValue="0x0" description="Data signal of crossHairY" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="crossHairY" access="W" resetValue="0" description="Bit 15 to 0 of crossHairY"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x58" name="ZplateHorContStart" access="W" resetValue="0x0" description="Data signal of ZplateHorContStart" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="ZplateHorContStart" access="W" resetValue="0" description="Bit 15 to 0 of ZplateHorContStart"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x60" name="ZplateHorContDelta" access="W" resetValue="0x0" description="Data signal of ZplateHorContDelta" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="ZplateHorContDelta" access="W" resetValue="0" description="Bit 15 to 0 of ZplateHorContDelta"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x68" name="ZplateVerContStart" access="W" resetValue="0x0" description="Data signal of ZplateVerContStart" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="ZplateVerContStart" access="W" resetValue="0" description="Bit 15 to 0 of ZplateVerContStart"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x70" name="ZplateVerContDelta" access="W" resetValue="0x0" description="Data signal of ZplateVerContDelta" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="ZplateVerContDelta" access="W" resetValue="0" description="Bit 15 to 0 of ZplateVerContDelta"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x78" name="boxSize" access="W" resetValue="0x0" description="Data signal of boxSize" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="boxSize" access="W" resetValue="0" description="Bit 15 to 0 of boxSize"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x80" name="boxColorR" access="W" resetValue="0x0" description="Data signal of boxColorR" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="boxColorR" access="W" resetValue="0" description="Bit 15 to 0 of boxColorR"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x88" name="boxColorG" access="W" resetValue="0x0" description="Data signal of boxColorG" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="boxColorG" access="W" resetValue="0" description="Bit 15 to 0 of boxColorG"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x90" name="boxColorB" access="W" resetValue="0x0" description="Data signal of boxColorB" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="boxColorB" access="W" resetValue="0" description="Bit 15 to 0 of boxColorB"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0xc0" name="dpDynamicRange" access="W" resetValue="0x0" description="Data signal of dpDynamicRange" range="32">
+                    <fields>
+                        <field offset="0" width="8" name="dpDynamicRange" access="W" resetValue="0" description="Bit 7 to 0 of dpDynamicRange"/>
+                        <field offset="8" width="24" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0xc8" name="dpYUVCoef" access="W" resetValue="0x0" description="Data signal of dpYUVCoef" range="32">
+                    <fields>
+                        <field offset="0" width="8" name="dpYUVCoef" access="W" resetValue="0" description="Bit 7 to 0 of dpYUVCoef"/>
+                        <field offset="8" width="24" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0xd0" name="field_id" access="W" resetValue="0x0" description="Data signal of field_id" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="field_id" access="W" resetValue="0" description="Bit 15 to 0 of field_id"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0xd8" name="bck_motion_en" access="W" resetValue="0x0" description="Data signal of bck_motion_en" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="bck_motion_en" access="W" resetValue="0" description="Bit 15 to 0 of bck_motion_en"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+            </registers>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="16" argName="height"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="S_AXILITE">
+                <table>
+                    <keys size="5">Interface, Data Width, Address Width, Offset, Register</keys>
+                    <column name="s_axi_CTRL">32, 8, 16, 0</column>
+                </table>
+            </item>
+            <item name="AXIS">
+                <table>
+                    <keys size="11">Interface, Register Mode, TDATA, TDEST, TID, TKEEP, TLAST, TREADY, TSTRB, TUSER, TVALID</keys>
+                    <column name="m_axis_video">both, 24, 1, 1, 3, 1, 1, 3, 1, 1</column>
+                </table>
+            </item>
+            <item name="REGISTER">
+                <table>
+                    <keys size="3">Interface, Mode, Bitwidth</keys>
+                    <column name="fid">ap_stable, 1</column>
+                    <column name="fid_in">ap_stable, 1</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="interrupt">interrupt, interrupt</column>
+                    <column name="ap_ctrl">ap_ctrl_hs</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="height">in, unsigned short&amp;</column>
+                    <column name="width">in, unsigned short&amp;</column>
+                    <column name="field_id">in, unsigned short&amp;</column>
+                    <column name="fid_in">in, bool&amp;</column>
+                    <column name="bckgndId">in, unsigned char&amp;</column>
+                    <column name="ovrlayId">in, unsigned char&amp;</column>
+                    <column name="maskId">in, unsigned char&amp;</column>
+                    <column name="motionSpeed">in, unsigned char&amp;</column>
+                    <column name="colorFormat">in, unsigned char&amp;</column>
+                    <column name="crossHairX">in, unsigned short&amp;</column>
+                    <column name="crossHairY">in, unsigned short&amp;</column>
+                    <column name="ZplateHorContStart">in, unsigned short&amp;</column>
+                    <column name="ZplateHorContDelta">in, unsigned short&amp;</column>
+                    <column name="ZplateVerContStart">in, unsigned short&amp;</column>
+                    <column name="ZplateVerContDelta">in, unsigned short&amp;</column>
+                    <column name="boxSize">in, unsigned short&amp;</column>
+                    <column name="boxColorR">in, unsigned short&amp;</column>
+                    <column name="boxColorG">in, unsigned short&amp;</column>
+                    <column name="boxColorB">in, unsigned short&amp;</column>
+                    <column name="dpDynamicRange">in, unsigned char&amp;</column>
+                    <column name="dpYUVCoef">in, unsigned char&amp;</column>
+                    <column name="bck_motion_en">in, unsigned short&amp;</column>
+                    <column name="m_axis_video">out, stream&lt;hls::axis&lt;ap_uint&lt;24&gt; 1 1 1&gt; 0&gt;&amp;</column>
+                    <column name="fid">out, bool&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="4">Argument, HW Name, HW Type, HW Info</keys>
+                    <column name="height">s_axi_CTRL height, register, offset=0x10 range=32</column>
+                    <column name="width">s_axi_CTRL width, register, offset=0x18 range=32</column>
+                    <column name="field_id">s_axi_CTRL field_id, register, offset=0xd0 range=32</column>
+                    <column name="fid_in">fid_in, port, </column>
+                    <column name="bckgndId">s_axi_CTRL bckgndId, register, offset=0x20 range=32</column>
+                    <column name="ovrlayId">s_axi_CTRL ovrlayId, register, offset=0x28 range=32</column>
+                    <column name="maskId">s_axi_CTRL maskId, register, offset=0x30 range=32</column>
+                    <column name="motionSpeed">s_axi_CTRL motionSpeed, register, offset=0x38 range=32</column>
+                    <column name="colorFormat">s_axi_CTRL colorFormat, register, offset=0x40 range=32</column>
+                    <column name="crossHairX">s_axi_CTRL crossHairX, register, offset=0x48 range=32</column>
+                    <column name="crossHairY">s_axi_CTRL crossHairY, register, offset=0x50 range=32</column>
+                    <column name="ZplateHorContStart">s_axi_CTRL ZplateHorContStart, register, offset=0x58 range=32</column>
+                    <column name="ZplateHorContDelta">s_axi_CTRL ZplateHorContDelta, register, offset=0x60 range=32</column>
+                    <column name="ZplateVerContStart">s_axi_CTRL ZplateVerContStart, register, offset=0x68 range=32</column>
+                    <column name="ZplateVerContDelta">s_axi_CTRL ZplateVerContDelta, register, offset=0x70 range=32</column>
+                    <column name="boxSize">s_axi_CTRL boxSize, register, offset=0x78 range=32</column>
+                    <column name="boxColorR">s_axi_CTRL boxColorR, register, offset=0x80 range=32</column>
+                    <column name="boxColorG">s_axi_CTRL boxColorG, register, offset=0x88 range=32</column>
+                    <column name="boxColorB">s_axi_CTRL boxColorB, register, offset=0x90 range=32</column>
+                    <column name="dpDynamicRange">s_axi_CTRL dpDynamicRange, register, offset=0xc0 range=32</column>
+                    <column name="dpYUVCoef">s_axi_CTRL dpYUVCoef, register, offset=0xc8 range=32</column>
+                    <column name="bck_motion_en">s_axi_CTRL bck_motion_en, register, offset=0xd8 range=32</column>
+                    <column name="m_axis_video">m_axis_video, interface, </column>
+                    <column name="fid">fid, port, </column>
+                    <column name="fid">fid_ap_vld, port, </column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0"/>
+    </ReportBurst>
+</profile>
+
