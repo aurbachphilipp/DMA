@@ -1,0 +1,11 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+| clk_out1_dma_demo_clk_wiz_0_0 |clk_out1_dma_demo_clk_wiz_0_0 |                                         dma_demo_i/v_tpg_0/inst/tpgForeground_U0/boxLeft_fu_116_reg[15]/D|
+| clk_out1_dma_demo_clk_wiz_0_0 |clk_out1_dma_demo_clk_wiz_0_0 |                                        dma_demo_i/v_tpg_0/inst/tpgBackground_U0/zonePlateVDelta_reg[15]/D|
+| clk_out1_dma_demo_clk_wiz_0_0 |clk_out1_dma_demo_clk_wiz_0_0 |                                    dma_demo_i/v_tpg_0/inst/tpgBackground_U0/add_ln1260_reg_4885_reg[16]/D|
+| clk_out1_dma_demo_clk_wiz_0_0 |clk_out1_dma_demo_clk_wiz_0_0 |                                         dma_demo_i/v_tpg_0/inst/tpgForeground_U0/boxLeft_fu_116_reg[12]/D|
+| clk_out1_dma_demo_clk_wiz_0_0 |clk_out1_dma_demo_clk_wiz_0_0 |                                         dma_demo_i/v_tpg_0/inst/tpgForeground_U0/boxLeft_fu_116_reg[11]/D|
+| clk_out1_dma_demo_clk_wiz_0_0 |clk_out1_dma_demo_clk_wiz_0_0 |                                                dma_demo_i/v_tpg_0/inst/tpgForeground_U0/reg_335_reg[14]/D|
+| clk_out1_dma_demo_clk_wiz_0_0 |clk_out1_dma_demo_clk_wiz_0_0 |                                                dma_demo_i/v_tpg_0/inst/tpgForeground_U0/reg_335_reg[15]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
